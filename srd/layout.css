@@ -38,17 +38,25 @@ main {
   grid-column-end: 3;
 }
 
+header a:visited {
+  color:inherit;
+  text-decoration:none;
+}
+
 .left-sidebar .title {
   padding-top: 1em;
-  padding-bottom: 1em;
+  padding-bottom: 0.5em;
+  font-family: serif;
   font-weight: bold;
+  font-size: large;
 }
 
 .left-sidebar a {
   display: inline-block;
   background-color: #eee;
   color: black;
-  padding: 6px;
+  padding: 4px;
+  margin-top: 6px;
   text-decoration: none;
 }
 
@@ -67,6 +75,8 @@ main {
 }
 
 
+
+/* responsive section */
 
 @media screen and (max-width: 1024px) {
 	
