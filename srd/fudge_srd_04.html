@@ -1,0 +1,2693 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fudge System Reference Document</title>
+    <meta name="description" content="Fudge System Reference Document">
+    <meta name="author" content="Simone Felli">
+    <link rel="stylesheet" href="./fonts-dejavu.css">
+    <link rel="stylesheet" href="./srd.css">
+    <link rel="stylesheet" href="./layout.css">
+    <script>
+        // solve back button problems
+        window.onhashchange = function() {
+          window.location.href = window.location.href;
+        };
+    </script>
+</head>
+
+<body>
+
+<header><a href="./index.html">Fudge System Reference Document</a></header>
+
+<!-- left-sidebar -->
+<div class="left-sidebar">
+    <div class="title">Table of content</div>
+    <hr>
+    <div><a href="./index.html">Copyrights, Trademarks, and Licenses</a></div>
+    <div><a href="./fudge_srd_01.html">Introduction</a></div>
+    <div><a href="./fudge_srd_02.html">What is Fudge?</a></div>
+    <div><a href="./fudge_srd_03.html">Fudge in a Nutshell</a></div>
+    <div><a href="./fudge_srd_04.html#toc15" class="active">Chapter 1 - Character Creation</a></div>
+      <ul class="c9">
+        <li>
+          <p class="Contents2">
+            <span class="SectionNumber">1.1 -</span> <a target="_self" href="#toc16">Character Creation Terms</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents2">
+            <span class="SectionNumber">1.2 -</span> <a target="_self" href="#toc17">Fudge Trait Levels</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents2">
+            <span class="SectionNumber">1.3 -</span> <a target="_self" href="#toc18">Character Traits</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">1.3.1 -</span> <a target="_self" href="#toc19">Attributes</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">1.3.2 -</span> <a target="_self" href="#toc20">Skills</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">1.3.3 -</span> <a target="_self" href="#toc21">Gifts</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">1.3.4 -</span> <a target="_self" href="#toc22">Faults</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">1.3.5 -</span> <a target="_self" href="#toc23">Personality</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">1.3.6 -</span> <a target="_self" href="#toc24">Fudge Points</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents2">
+            <span class="SectionNumber">1.4 -</span> <a target="_self" href="#toc25">Allocating Traits</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents2">
+            <span class="SectionNumber">1.5 -</span> <a target="_self" href="#toc26">Subjective Character Creation</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents2">
+            <span class="SectionNumber">1.6 -</span> <a target="_self" href="#toc27">Objective Character Creation</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">1.6.1 -</span> <a target="_self" href="#toc28">Attributes</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">1.6.2 -</span> <a target="_self" href="#toc29">Skills</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">1.6.3 -</span> <a target="_self" href="#toc30">Gifts &amp; Faults</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">1.6.4 -</span> <a target="_self" href="#toc31">Trading Traits</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents2">
+            <span class="SectionNumber">1.7 -</span> <a target="_self" href="#toc32">Uncommitted Traits</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents2">
+            <span class="SectionNumber">1.8 -</span> <a target="_self" href="#toc33">Random Character Creation</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents2">
+            <span class="SectionNumber">1.9 -</span> <a target="_self" href="#toc34">Minimizing Abuse</a>
+          </p>
+        </li>
+      </ul>
+    <div><a href="./fudge_srd_05.html">Chapter 2 – Supernormal Powers</a></div>
+    <div><a href="./fudge_srd_06.html">Chapter 3 – Action Resolution</a></div>
+    <div><a href="./fudge_srd_07.html">Chapter 4 – Combat</a></div>
+    <div><a href="./fudge_srd_08.html">Chapter 5 – Character Development</a></div>
+    <div><a href="./fudge_srd_09.html">Chapter 6 – Tips and Examples</a></div>
+    <div><a href="./fudge_srd_10.html">Chapter 7 – The Addenda</a></div>
+    <div><a href="./fudge_srd_11.html">Chapter 8 – Fantasy Fudge</a></div>
+    <div><a href="./fudge_srd_12.html">Miscellaneous Charts and Information</a></div>
+    <div><a href="./fudge_srd_13.html">Open Game License Version 1.0a</a></div>
+</div>
+
+<!-- main -->
+<main>
+
+    <h1 id="toc15" class="c69">
+      <span class="SectionNumber">Chapter 1 -</span> <a target="_self" id="RefHeadingToc11792460302668" name="RefHeadingToc11792460302668"></a><a target="_self" id="chapcharcreate" name="chapcharcreate"></a>Character Creation
+    </h1>
+    <p class="Firstparagraph c7">
+      This chapter contains all the information you'll need to create human characters, including character traits and trait levels, and some different ways to allocate them.
+    </p>
+    <p class="Textbody">
+      <span class="c6">For non-human characters - or characters with supernormal abilities (magic, psionics, super powers, etc.) - you will also need to read Chapter</span> <a target="_self" class="Internet20link" href="fudge_srd_05.html#chapsupernormal"><span class="Internetlink">2</span></a><span class="c6">, Supernormal Powers, before your characters will be complete.</span>
+    </p>
+    <h2 id="toc16" class="c70">
+      <span class="SectionNumber">1.1 -</span> <a target="_self" id="RefHeadingToc198472649761757" name="RefHeadingToc198472649761757"></a><a target="_self" id="seccharcreateterms" name="seccharcreateterms"></a>Character Creation Terms
+    </h2>
+    <p class="DefinitionTerm c7">
+      Trait:
+    </p>
+    <p class="DefinitionDefinition c7">
+      anything that describes a character. A trait can be an attribute, skill, inherited gift, fault, supernormal power, or any other feature that describes a character. The GM is the ultimate authority on what is an attribute and what is a skill, gift, etc.
+    </p>
+    <p class="DefinitionTerm c7">
+      Level:
+    </p>
+    <p class="DefinitionDefinition c7">
+      most traits are described by one of seven adjectives. These seven descriptive words represent levels a trait may be at. In addition, the Objective Character Creation method grants the player free levels, and demands he keep track of them. In this case, one level is required to raise a trait to the next better adjective.
+    </p>
+    <p class="DefinitionTerm c7">
+      Attribute:
+    </p>
+    <p class="DefinitionDefinition">
+      <span class="c6">any trait that everyone in the game world has, in some degree or other. See Section</span> <a target="_self" class="Internet20link" href="#secattributes"><span class="Internetlink">1.3.1</span></a><span class="c6">, Attributes, for a sample list of attributes. On a scale of Terrible…Fair… Superb, the average human will have an attribute at Fair.</span>
+    </p>
+    <p class="DefinitionTerm c7">
+      Skill:
+    </p>
+    <p class="DefinitionDefinition c7">
+      any trait that isn't an attribute, but can be improved through practice. The default for an unlisted skill is usually Poor, though that can vary up or down a little.
+    </p>
+    <p class="DefinitionTerm c7">
+      Gift:
+    </p>
+    <p class="DefinitionDefinition c7">
+      any trait that isn't an attribute or skill, but is something positive for the character. Some GMs will define a certain trait as a gift, while others will define the same trait as an attribute. In general, if the trait doesn't easily fit the Terrible…Fair…Superb scale, it's probably a gift.
+    </p>
+    <p class="DefinitionTerm c7">
+      Fault:
+    </p>
+    <p class="DefinitionDefinition c7">
+      any trait that limits a character's actions, or earns him a bad reaction from other people.
+    </p>
+    <p class="DefinitionTerm c7">
+      Supernormal Power:
+    </p>
+    <p class="DefinitionDefinition">
+      <span class="c6">although technically gifts, supernormal powers are treated separately in Chapter</span> <a target="_self" class="Internet20link" href="fudge_srd_05.html#chapsupernormal"><span class="Internetlink">2</span></a><span class="c6">.</span>
+    </p>
+    <h2 id="toc17" class="c70">
+      <span class="SectionNumber">1.2 -</span> <a target="_self" id="RefHeadingToc198492649761757" name="RefHeadingToc198492649761757"></a><a target="_self" id="sectraitlevels" name="sectraitlevels"></a>Fudge Trait Levels
+    </h2>
+    <p class="Firstparagraph c7">
+      Fudge uses ordinary words to describe various traits of a character. The following terms of a seven-level sequence are suggested (from best to worst):
+    </p>
+    <table id="Chapter1Laddertable" class="c15">
+      <colgroup>
+        <col class="c10">
+      </colgroup>
+      <tbody>
+        <tr>
+          <td class="c12">
+            <p class="TableContents c36">
+              Superb
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="c13">
+            <p class="TableContents c36">
+              Great
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="c13">
+            <p class="TableContents c36">
+              Good
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="c13">
+            <p class="TableContents c36">
+              Fair
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="c13">
+            <p class="TableContents c36">
+              Mediocre
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="c13">
+            <p class="TableContents c36">
+              Poor
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="c14">
+            <p class="TableContents c36">
+              Terrible
+            </p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="GenericNoIndent">
+      These levels should be written on each character sheet for easy reference.
+    </p>
+    <p class="Textbody c7">
+      A GM may alter this list in any way she desires, including expanding or shrinking it. For example, if Superb doesn't sound right to you, use Awesome - or even Way Cool. If the words Mediocre and Fair don't make sense to you, change them. These seven terms will be used in the rules, however, for clarity.
+    </p>
+    <p class="Textbody c7">
+      To remember the order, compare adjacent words. If, as a beginner, your eventual goal is to become an excellent game player, for example, ask yourself if you'd rather be called a Fair game player or a Mediocre game player.
+    </p>
+    <p class="Textbody c7">
+      There is an additional level that can be used in Fudge, but is not listed above: Legendary, which is beyond Superb. Those with Legendary Strength, for example, are in the 99.9th percentile, and their names can be found in any book of world records.
+    </p>
+    <p class="Textbody">
+      <span class="StrongEmphasis">Important Note</span><span class="c6">: not every GM will allow PCs to become Legendary. Even in games that do include the Legendary level, it is not recommended that any character be allowed to start the game as Legendary. Superb represents the 98th to 99.9th percentile of any given trait, which should be enough for any beginning PC. Of course, if a player character gets a bit overconfident, meeting an NPC Legendary swordswoman can be a grounding experience?</span>
+    </p>
+    <p class="Textbody c7">
+      If someone really has to begin play as a Legendary swordsman, strong man, etc., doing the GM's laundry for half a year or so (in advance) should be a sufficient bribe to be allowed to start at that level. Of course, working towards Legendary makes a great campaign goal, and so PCs may rise to that height, given enough playing time and a generous GM.
+    </p>
+    <h2 id="toc18" class="c70">
+      <span class="SectionNumber">1.3 -</span> <a target="_self" id="RefHeadingToc198512649761757" name="RefHeadingToc198512649761757"></a><a target="_self" id="seccharactertraits" name="seccharactertraits"></a>Character Traits
+    </h2>
+    <p class="Firstparagraph">
+      <span class="c6">Traits are divided into Attributes, Skills, Gifts, Faults, and Supernormal Powers. Not every GM will have all five types of traits in her game. These traits are defined under Section</span> <a target="_self" class="Internet20link" href="#seccharcreateterms"><span class="Internetlink">1.1</span></a><span class="c6">, Character Creation Terms, above.</span>
+    </p>
+    <h3 id="toc19" class="c71">
+      <span class="SectionNumber">1.3.1 -</span> <a target="_self" id="RefHeadingToc198532649761757" name="RefHeadingToc198532649761757"></a><a target="_self" id="secattributes" name="secattributes"></a>Attributes
+    </h3>
+    <p class="Firstparagraph">
+      <span class="c6">Gamers often disagree on how many attributes a game should have. Some prefer few attributes, others many. Even those that agree on the number of attributes may disagree on the selection. While Fudge discusses some attributes (Strength, Fatigue, Constitution, etc.) in later sections, none of these are mandatory. The only attribute the basic Fudge rules assume is Damage Capacity, and even that is optional - see Section</span> <a target="_self" class="Internet20link" href="fudge_srd_07.html#secdamagecapacity"><span class="Internetlink">4.5.2</span></a><span class="c6">, Damage Capacity.</span>
+    </p>
+    <p class="Textbody c7">
+      Here is a partial list of attributes in use by other games; select to your taste, or skip these altogether:
+    </p>
+    <p class="GenericNoIndent">
+      <span class="StrongEmphasis">Body:</span>
+    </p>
+    <table id="Chapter1BodyAttrtable" class="c75">
+      <colgroup>
+        <col class="c72">
+        <col class="c72">
+      </colgroup>
+      <tbody>
+        <tr>
+          <td class="c73">
+            <p class="TableContents">
+              Agility
+            </p>
+          </td>
+          <td class="c73">
+            <p class="TableContents">
+              Hit Points
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="c73">
+            <p class="TableContents">
+              Aim
+            </p>
+          </td>
+          <td class="c73">
+            <p class="TableContents">
+              Manual Dexterity
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="c73">
+            <p class="TableContents">
+              Appearance
+            </p>
+          </td>
+          <td class="c73">
+            <p class="TableContents">
+              Muscle
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="c73">
+            <p class="TableContents">
+              Balance
+            </p>
+          </td>
+          <td class="c73">
+            <p class="TableContents">
+              Nimbleness
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="c73">
+            <p class="TableContents">
+              Brawn
+            </p>
+          </td>
+          <td class="c73">
+            <p class="TableContents">
+              Quickness
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="c73">
+            <p class="TableContents">
+              Build
+            </p>
+          </td>
+          <td class="c73">
+            <p class="TableContents">
+              Physical
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="c73">
+            <p class="TableContents">
+              Constitution
+            </p>
+          </td>
+          <td class="c73">
+            <p class="TableContents">
+              Reflexes
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="c73">
+            <p class="TableContents">
+              Coordination
+            </p>
+          </td>
+          <td class="c73">
+            <p class="TableContents">
+              Size
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="c73">
+            <p class="TableContents">
+              Deftness
+            </p>
+          </td>
+          <td class="c73">
+            <p class="TableContents">
+              Smell
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="c73">
+            <p class="TableContents">
+              Dexterity
+            </p>
+          </td>
+          <td class="c73">
+            <p class="TableContents">
+              Speed
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="c73">
+            <p class="TableContents">
+              Endurance
+            </p>
+          </td>
+          <td class="c73">
+            <p class="TableContents">
+              Stamina
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="c73">
+            <p class="TableContents">
+              Fatigue
+            </p>
+          </td>
+          <td class="c73">
+            <p class="TableContents">
+              Strength
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="c73">
+            <p class="TableContents">
+              Fitness
+            </p>
+          </td>
+          <td class="c73">
+            <p class="TableContents">
+              Wound Resistance
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="c73">
+            <p class="TableContents">
+              Health
+            </p>
+          </td>
+          <td class="c73">
+            <p class="TableContents">
+              Zip
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="c73">
+            <p class="TableContents c74">
+              and so on...
+            </p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="GenericNoIndent">
+      <span class="StrongEmphasis">Mind:</span>
+    </p>
+    <table id="Chapter1MindAttrtable" class="c77">
+      <colgroup>
+        <col class="c72">
+        <col class="c72">
+      </colgroup>
+      <tbody>
+        <tr class="c24">
+          <td class="c76">
+            <p class="TableContents">
+              Cunning
+            </p>
+          </td>
+          <td class="c76">
+            <p class="TableContents">
+              Mental
+            </p>
+          </td>
+        </tr>
+        <tr class="c24">
+          <td class="c76">
+            <p class="TableContents">
+              Education
+            </p>
+          </td>
+          <td class="c76">
+            <p class="TableContents">
+              Mental Strength
+            </p>
+          </td>
+        </tr>
+        <tr class="c24">
+          <td class="c76">
+            <p class="TableContents">
+              Intelligence
+            </p>
+          </td>
+          <td class="c76">
+            <p class="TableContents">
+              Perception
+            </p>
+          </td>
+        </tr>
+        <tr class="c24">
+          <td class="c76">
+            <p class="TableContents">
+              Knowledge
+            </p>
+          </td>
+          <td class="c76">
+            <p class="TableContents">
+              Reasoning
+            </p>
+          </td>
+        </tr>
+        <tr class="c24">
+          <td class="c76">
+            <p class="TableContents">
+              Learning
+            </p>
+          </td>
+          <td class="c76">
+            <p class="TableContents">
+              Smarts
+            </p>
+          </td>
+        </tr>
+        <tr class="c24">
+          <td class="c76">
+            <p class="TableContents">
+              Mechanical
+            </p>
+          </td>
+          <td class="c76">
+            <p class="TableContents">
+              Technical
+            </p>
+          </td>
+        </tr>
+        <tr class="c24">
+          <td class="c76">
+            <p class="TableContents">
+              Memory
+            </p>
+          </td>
+          <td class="c76">
+            <p class="TableContents">
+              Wit
+            </p>
+          </td>
+        </tr>
+        <tr class="c24">
+          <td class="c76">
+            <p class="TableContents c74">
+              and so on...
+            </p>
+          </td>
+          <td class="c76">
+            <p class="c44">
+              &nbsp;
+            </p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="GenericNoIndent">
+      <span class="StrongEmphasis">Soul:</span>
+    </p>
+    <table id="Chapter1SoulAttrtable" class="c75">
+      <colgroup>
+        <col class="c72">
+        <col class="c72">
+      </colgroup>
+      <tbody>
+        <tr>
+          <td class="c73">
+            <p class="TableContents">
+              Channeling
+            </p>
+          </td>
+          <td class="c73">
+            <p class="TableContents">
+              Magic Resistance
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="c73">
+            <p class="TableContents">
+              Charisma
+            </p>
+          </td>
+          <td class="c73">
+            <p class="TableContents">
+              Magic Potential
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="c73">
+            <p class="TableContents">
+              Charm
+            </p>
+          </td>
+          <td class="c73">
+            <p class="TableContents">
+              Magical Ability
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="c73">
+            <p class="TableContents">
+              Chutzpah
+            </p>
+          </td>
+          <td class="c73">
+            <p class="TableContents">
+              Power
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="c73">
+            <p class="TableContents">
+              Common Sense
+            </p>
+          </td>
+          <td class="c73">
+            <p class="TableContents">
+              Presence
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="c73">
+            <p class="TableContents">
+              Coolness
+            </p>
+          </td>
+          <td class="c73">
+            <p class="TableContents">
+              Psyche
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="c73">
+            <p class="TableContents">
+              Disposition
+            </p>
+          </td>
+          <td class="c73">
+            <p class="TableContents">
+              Sanity
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="c73">
+            <p class="TableContents">
+              Drive
+            </p>
+          </td>
+          <td class="c73">
+            <p class="TableContents">
+              Self Discipline
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="c73">
+            <p class="TableContents">
+              Ego
+            </p>
+          </td>
+          <td class="c73">
+            <p class="TableContents">
+              Social
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="c73">
+            <p class="TableContents">
+              Empathy
+            </p>
+          </td>
+          <td class="c73">
+            <p class="TableContents">
+              Spiritual
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="c73">
+            <p class="TableContents">
+              Fate
+            </p>
+          </td>
+          <td class="c73">
+            <p class="TableContents">
+              Style
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="c73">
+            <p class="TableContents">
+              Honor
+            </p>
+          </td>
+          <td class="c73">
+            <p class="TableContents">
+              Will
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="c73">
+            <p class="TableContents">
+              Intuition
+            </p>
+          </td>
+          <td class="c73">
+            <p class="TableContents">
+              Wisdom
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="c73">
+            <p class="TableContents">
+              Luck
+            </p>
+          </td>
+          <td class="c73">
+            <p class="c44">
+              &nbsp;
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="c73">
+            <p class="TableContents c74">
+              and so on...
+            </p>
+          </td>
+          <td class="c73">
+            <p class="c44">
+              &nbsp;
+            </p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="GenericNoIndent">
+      <span class="StrongEmphasis">Other:</span> <span class="c6">Rank, Status, Wealth.</span>
+    </p>
+    <p class="Textbody c7">
+      Most games combine many of these attributes, while others treat some of them as gifts or even skills. In Fudge, if you wish, you can even split these attributes into smaller ones: Lifting Strength, Carrying Strength, Damage-dealing Strength, etc.
+    </p>
+    <p class="Textbody">
+      <span class="c6">At this point, the GM decides how many attributes she deems necessary - or she might leave it up to each player. (Commercial games range from one or two to over 20.) See Section</span> <a target="_self" class="Internet20link" href="fudge_srd_09.html#seccharexamples"><span class="Internetlink">6.3</span></a><span class="c6">, Character Examples, for some possibilities.</span>
+    </p>
+    <h3 id="toc20" class="c71">
+      <span class="SectionNumber">1.3.2 -</span> <a target="_self" id="RefHeadingToc11794460302668" name="RefHeadingToc11794460302668"></a><a target="_self" id="secskills" name="secskills"></a>Skills
+    </h3>
+    <p class="Firstparagraph c7">
+      Skills are not related to attributes or their levels in Fudge. Players are encouraged to design their characters logically - a character with a lot of Good physical skills should probably have better than average physical attributes, for example. On the other hand, Fudge allows a player to create someone like Groo the Wanderer<span class="Footnoteanchor"><a target="_self" href="#ftn1" id="bodyftn1" name="bodyftn1">[1]</a></span>, who is very clumsy yet extremely skilled with his swords.
+    </p>
+    <p class="Textbody c7">
+      The GM should then decide what level of skill depth she wants. Are skills broad categories such as "Social skills," or moderately broad abilities, such as "Inspire People, Parley, and Market Savvy," or are they specific abilities such as "Barter, Seduce, Repartee, Persuade, Fast-Talk, Bully, Grovel, Carouse, Flatter, Bribe," etc.?
+    </p>
+    <p class="TableCaption">
+      Examples of Skill Depth:
+    </p>
+    <table id="Chapter1ExamplesOfSkillDepthtable" class="c46">
+      <colgroup>
+        <col class="c78">
+        <col class="c79">
+        <col class="c80">
+        <col class="c81">
+      </colgroup>
+      <tbody>
+        <tr>
+          <td rowspan="13" class="c82">
+            <p class="TableContents c36">
+              Animal Skills
+            </p>
+          </td>
+          <td rowspan="3" class="c82">
+            <p class="TableContents c36">
+              Riding
+            </p>
+          </td>
+          <td class="c83">
+            <p class="TableContents c36">
+              Riding Horses
+            </p>
+          </td>
+          <td class="c84">
+            <p class="c44">
+              &nbsp;
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="c85">
+            <p class="TableContents c36">
+              Riding Camels
+            </p>
+          </td>
+          <td class="c84">
+            <p class="c44">
+              &nbsp;
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="c85">
+            <p class="TableContents c36">
+              Riding Elephants
+            </p>
+          </td>
+          <td class="c84">
+            <p class="c44">
+              &nbsp;
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td rowspan="3" class="c86">
+            <p class="TableContents c36">
+              Driving
+            </p>
+          </td>
+          <td class="c85">
+            <p class="TableContents c36">
+              Driving Oxen
+            </p>
+          </td>
+          <td class="c84">
+            <p class="c44">
+              &nbsp;
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="c85">
+            <p class="TableContents c36">
+              Driving Mules &amp; Horses
+            </p>
+          </td>
+          <td class="c84">
+            <p class="c44">
+              &nbsp;
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="c85">
+            <p class="TableContents c36">
+              Driving Dogs
+            </p>
+          </td>
+          <td class="c84">
+            <p class="c44">
+              &nbsp;
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td rowspan="7" class="c86">
+            <p class="TableContents c36">
+              Care
+            </p>
+          </td>
+          <td class="c85">
+            <p class="TableContents c36">
+              Grooming
+            </p>
+          </td>
+          <td class="c84">
+            <p class="c44">
+              &nbsp;
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="c85">
+            <p class="TableContents c36">
+              Feeding
+            </p>
+          </td>
+          <td class="c84">
+            <p class="c44">
+              &nbsp;
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="c85">
+            <p class="TableContents c36">
+              Breeding
+            </p>
+          </td>
+          <td class="c84">
+            <p class="c44">
+              &nbsp;
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td rowspan="4" class="c85">
+            <p class="TableContents c36">
+              Veterinary
+            </p>
+          </td>
+          <td class="c83">
+            <p class="TableContents c36">
+              First Aid
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="c85">
+            <p class="TableContents c36">
+              Diagnosis
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="c85">
+            <p class="TableContents c36">
+              Medicine
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="c85">
+            <p class="TableContents c36">
+              Sugery
+            </p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="Textbody">
+      An attribute is, in some ways, a very broad skill group, and skills may be ignored altogether if desired.
+    </p>
+    <p class="Textbody c7">
+      Combat skills require special consideration. The broadest possible category is simply that: Combat Skills. A broad range breaks that down to Melee Weapons, Unarmed Combat, and Missile Weapons. A somewhat narrower approach would break down Melee Weapons into Close Combat Melee Weapons (knives, blackjacks, etc.), One-handed Melee Weapons (one-handed swords, axes, maces, etc.) and Two-handed Melee Weapons (polearms, spears, battle-axes, two-handed swords, etc.). Or, for a precise list of skills, each group in parentheses could be listed as a separate skill; a character skilled at using a broadsword knows nothing about using a saber, for example.
+    </p>
+    <p class="Textbody c7">
+      Each choice has its merits. Broad skill groups that include many sub-skills make for an easy character sheet and fairly competent characters, while specific skills allow fine-tuning a character to a precise degree.
+    </p>
+    <p class="Textbody">
+      <span class="c6">See Section</span> <a target="_self" class="Internet20link" href="fudge_srd_09.html#seccharexamples"><span class="Internetlink">6.3</span></a><span class="c6">, Character Examples, for an idea of how broadly or finely skills can be defined in a game.</span>
+    </p>
+    <h3 id="toc21" class="c71">
+      <span class="SectionNumber">1.3.3 -</span> <a target="_self" id="RefHeadingToc198552649761757" name="RefHeadingToc198552649761757"></a><a target="_self" id="secgifts" name="secgifts"></a>Gifts
+    </h3>
+    <p class="Firstparagraph c7">
+      A gift is a positive trait that doesn't seem to fit the Terrible… Fair…Superb scale that attributes and skills fall into. However, this will vary from GM to GM: a photographic memory is a gift to one GM, while it is a Superb Memory attribute to another. Some GMs will define Charisma as an attribute, while others define it as a gift. To one Gamemaster, a character either has Night Vision or he doesn't; another will allow characters to take different levels of it. A Gamemaster may not even have gifts in her game at all.
+    </p>
+    <p class="Textbody c7">
+      Alternatively, gifts can come in levels, but the levels don't necessarily coincide with the levels used by other traits. For example, Status might be three- or four-tiered, or even nine-tiered instead of fitting into the seven levels of attributes and skills. Wealth might come only in five different levels - whatever each GM desires.
+    </p>
+    <p class="Textbody">
+      <span class="c6">Supernormal powers, such as the ability to cast magic spells, fly, read minds, etc., are technically powerful gifts, but are handled separately in Chapter</span> <a target="_self" class="Internet20link" href="fudge_srd_05.html#chapsupernormal"><span class="Internetlink">2</span></a><span class="c6">. Likewise, traits above the human norm, such as a super strong fantasy or alien race, are treated by definition as supernormal powers.</span>
+    </p>
+    <p class="Textbody c7">
+      In general, if a gift isn't written on the character sheet, the character doesn't have it.
+    </p>
+    <p class="GenericNoIndent">
+      <span class="Emphasis">Some possible gifts include</span>:
+    </p>
+    <ul class="c8">
+      <li>
+        <p class="MyList">
+          Absolute Direction;
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Always keeps his cool;
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Ambidextrous;
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Animal Empathy;
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Attractive;
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Beautiful speaking voice;
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Bonus to one aspect of an attribute;
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Combat Reflexes;
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Contacts in police force;
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Danger Sense;
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Extraordinary Speed;
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Healthy Constitution;
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Keen senses;
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Literate;
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Lucky;
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Many people owe him favors;
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Never disoriented in zero Gravity;
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Never forgets a name/face/whatever;
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Night Vision;
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Patron;
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Perfect Timing;
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Peripheral Vision;
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Quick Reflexes;
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Rank;
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Rapid Healing;
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Reputation as Hero;
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Scale;
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Sense of empathy;
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Single-minded (+1 to any lengthy task);
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Status;
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Strong Will;
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Tolerant;
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Tough Hide (-1 to damage) Wealth;
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          etc.
+        </p>
+      </li>
+    </ul>
+    <p class="Textbody">
+      <span class="c6">See also Section</span> <a target="_self" class="Internet20link" href="fudge_srd_09.html#seccharexamples"><span class="Internetlink">6.3</span></a><span class="c6">, Character Examples, for examples of different gifts. Many others are possible.</span>
+    </p>
+    <h3 id="toc22" class="c71">
+      <span class="SectionNumber">1.3.4 -</span> <a target="_self" id="RefHeadingToc198572649761757" name="RefHeadingToc198572649761757"></a><a target="_self" id="secfaults" name="secfaults"></a>Faults
+    </h3>
+    <p class="Firstparagraph c7">
+      Faults are anything that makes life more difficult for a character. The primary faults are those that restrict a character's actions or earn him a bad reaction from chance-met NPCs. Various attitudes, neuroses and phobias are faults; so are physical disabilities and social stigmas. There are heroic faults, too: a code of honor and inability to tell a lie restrict your actions significantly, but are not signs of flawed personality.
+    </p>
+    <p class="GenericNoIndent">
+      <span class="Emphasis">Some sample faults</span><span class="c6">:</span>
+    </p>
+    <ul class="c8">
+      <li>
+        <p class="MyList">
+          Absent-Minded;
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Addiction;
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Ambitious;
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Amorous heartbreaker;
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Bloodlust;
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Blunt and tactless;
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Bravery indistinguishable from foolhardiness;
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Can't resist having the last word;
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Code of Ethics limits actions;
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Code of Honor;
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Compulsive Behavior;
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Coward;
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Curious;
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Finicky;
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Easily Distractible;
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Enemy;
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Fanatic patriot;
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Full of bluff and bluster and machismo;
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Garrulous;
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Getting old;
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Glutton;
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Goes Berserk if Wounded;
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Gossip;
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Greedy;
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Gullible;
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Humanitarian (helps the needy for no pay);
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Idealist (not grounded in reality);
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Indecisive;
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Intolerant;
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Jealous of Anyone Getting More Attention;
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Lazy;
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Loyal to Companions;
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Manic-Depressive;
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Melancholy;
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Multiple Personality;
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Must obey senior officers;
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Nosy;
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Obsession;
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Outlaw;
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Overconfident;
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Owes favors;
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Phobias;
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Poor;
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Practical Joker;
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Quick-Tempered;
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Quixotic;
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Self-defense Pacifist;
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Socially awkward;
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Soft-hearted;
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Stubborn;
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Quick to take offense;
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Unlucky;
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Vain;
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Violent when enraged;
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Vow;
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Worry Wart;
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          Zealous behavior;
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          etc.
+        </p>
+      </li>
+    </ul>
+    <p class="Textbody">
+      <span class="c6">See also Section</span> <a target="_self" class="Internet20link" href="fudge_srd_09.html#seccharexamples"><span class="Internetlink">6.3</span></a><span class="c6">, Character Examples, for examples of different faults. Many others are possible.</span>
+    </p>
+    <h3 id="toc23" class="c71">
+      <span class="SectionNumber">1.3.5 -</span> <a target="_self" id="RefHeadingToc198592649761757" name="RefHeadingToc198592649761757"></a><a target="_self" id="secpersonality" name="secpersonality"></a>Personality
+    </h3>
+    <p class="Firstparagraph c7">
+      A character's personality may be represented by one or more traits, or it can be written out as character background or description.
+    </p>
+    <p class="Textbody c7">
+      As an example of the first case, courage is an attribute, a gift, or even a fault. As an attribute, Superb Courage or Terrible Courage has an obvious meaning. As a gift, obvious bravery gives the character a positive reaction from people he meets (assuming they see him being courageous, or have heard of his deeds, of course).
+    </p>
+    <p class="Textbody c7">
+      However, both Very Courageous and Very Cowardly can be faults because they can limit a character's actions. A courageous character might not run away from a fight even if it were in his best interest, while a cowardly one would have a hard time staying in a fight even if he stood to gain by staying.
+    </p>
+    <p class="Textbody c7">
+      Or a character's level of courage might not be a quantified trait at all, but something the player simply decides. "Moose is very brave," a player jots down, and that is that. It doesn't have to count as a high attribute, gift, or fault.
+    </p>
+    <p class="Textbody c7">
+      A player should ask the GM how she wants to handle specific personality traits. If the player describes his character in detail, the GM can easily decide which personality traits are attributes, gifts, or faults. However they are handled, most characters benefit by having their personalities fleshed out.
+    </p>
+    <h3 id="toc24" class="c71">
+      <span class="SectionNumber">1.3.6 -</span> <a target="_self" id="RefHeadingToc198612649761757" name="RefHeadingToc198612649761757"></a><a target="_self" id="secfudgepoints" name="secfudgepoints"></a>Fudge Points
+    </h3>
+    <p class="Firstparagraph c7">
+      Fudge Points are meta-game gifts that may be used to buy "luck" during a game - they let the players fudge a game result. These are "meta-game" gifts because they operate at the player-GM level, not character-character level. Not every GM will allow Fudge Points - those who prefer realistic games should probably not use them.
+    </p>
+    <p class="Textbody c7">
+      The GM sets the starting number of Fudge Points. The recommended range is from one to five. Unused Fudge Points are saved up for the next gaming session. Each player may get an additional number each gaming session. (This is also set by the GM, and may or may not equal the starting level.) Alternately, the GM may simply allow Experience Points (EP) to be traded for Fudge Points at a rate appropriate for the campaign: 3 EP = 1 Fudge Point, down to 1 EP = 1 Fudge Point.
+    </p>
+    <p class="Textbody c7">
+      Fudge Points can be used in many ways, depending on what level on the realistic-legendary scale the game is played at. Here are some suggested ways to use them - the GM can create her own uses, of course. A GM may allow as few or many of these options as she wishes - the players should ask her before assuming they can do something with Fudge Points.
+    </p>
+    <ol class="c88">
+      <li>
+        <p class="MyList c87">
+          Spending a Fudge Point may accomplish an Unopposed action automatically and with panache - good for impressing members of the appropriate sex, and possibly avoiding injury in the case of dangerous actions. The GM may veto this use of Fudge Points for actions with a Difficulty Level of Beyond Superb. The GM may disallow this option for an Opposed action, such as combat.
+        </p>
+      </li>
+      <li>
+        <p class="MyList c87">
+          A player may spend one Fudge Point to alter a die roll one level, up or down as desired. The die roll can be either one the player makes, or one the GM makes that directly concerns the player's character.
+        </p>
+      </li>
+      <li>
+        <p class="MyList c87">
+          A player may spend one Fudge Point to declare that wounds aren't as bad as they first looked. This reduces the intensity of each wound by one or two levels (a Hurt result becomes a Scratch, for example, or even a Very Hurt becomes a Scratch). Or it can mean that any one wound (or more), regardless of level, is just a Scratch. This latter option may cost more than one Fudge point. The GM can restrict this to outside of combat time.
+        </p>
+      </li>
+      <li>
+        <p class="MyList c87">
+          A player may spend one (or more) Fudge Points to get an automatic +4 result, without having to roll the dice. This use is available in Opposed actions, if allowed.
+        </p>
+      </li>
+      <li>
+        <p class="MyList c87">
+          For appropriately legendary games, a GM-set number of Fudge Points can be spent to ensure a favorable coincidence. (This is always subject to GM veto, of course.) For example, if the PCs are in a maximum security prison, perhaps one of the guards turns out to be the cousin of one of the PCs - and lets them escape! Or the captain of the fishing boat rescuing the PCs turns out to be someone who owes a favor to one of them, and is willing to take them out of his way to help them out? And so on. This option should cost a lot of Fudge Points, except in certain genres where bizarre coincidences are the norm.
+        </p>
+      </li>
+    </ol>
+    <h2 id="toc25" class="c70">
+      <span class="SectionNumber">1.4 -</span> <a target="_self" id="RefHeadingToc198632649761757" name="RefHeadingToc198632649761757"></a><a target="_self" id="secallocatingtraits" name="secallocatingtraits"></a>Allocating Traits
+    </h2>
+    <p class="Firstparagraph">
+      <span class="c6">Character creation in Fudge assumes the players will design their characters, rather than leaving attributes and other traits to chance. The GM may allow randomly determined traits if she desires - a suggested method is given in Section</span> <a target="_self" class="Internet20link" href="#secrandom"><span class="Internetlink">1.8</span></a><span class="c6">, Random Character Creation.</span>
+    </p>
+    <p class="Textbody">
+      <span class="c6">There are no mandatory traits in Fudge. The GM should inform the players which traits she expects to be most important, and the players may suggest others to the GM for her approval. The GM may even make a template, if desired - a collection of traits she deems important (with room for customization) - and let the players define the level of each trait. See Section</span> <a target="_self" class="Internet20link" href="fudge_srd_09.html#sectemplates"><span class="Internetlink">6.1.2</span></a><span class="c6">, Templates.</span>
+    </p>
+    <p class="Textbody c7">
+      When a character is created, the player should define as many character traits as he finds necessary - which may or may not coincide with a GM-determined list. If a player adds an attribute the GM deems unnecessary, the GM may treat that attribute as simply a description of the character. She may require a roll against a different attribute than the player has in mind, and the player must abide by her decision.
+    </p>
+    <p class="Textbody c7">
+      As an example, a certain GM decides she wants characters to have a general Dexterity attribute. A player takes Good Dexterity for his PC, but wants to show that the character is better at whole body dexterity than at manual dexterity. So he writes: Great Agility and Fair Manual Dexterity. However, the GM can ignore these distinctions, and simply require a Dexterity roll, since that is the trait she has chosen. (She can average the PC-chosen levels, or simply select one of them.) Of course, she can also allow him to roll on the attributes he has created.
+    </p>
+    <p class="Textbody c7">
+      In Fudge, a character with a trait at Fair will succeed at ordinary tasks 62% of the time - there is usually no need to create a superstar. In fact, Great is just that: great! Superb should be reserved for the occasional trait in which your character is the best he's ever met.
+    </p>
+    <p class="Textbody c7">
+      Any trait that is not defined at character creation will be at a default level:
+    </p>
+    <p class="Textbody">
+      <span class="Emphasis">For attributes</span>: Fair.
+    </p>
+    <p class="Textbody">
+      <span class="Emphasis">For most skills</span>: Poor (easier skills are at Mediocre, while harder ones are at Terrible). A skill default means untrained, or close to it. However, it is possible to take a skill at Terrible (below the default level for most skills), which implies an ineptitude worse than untrained.
+    </p>
+    <p class="Textbody">
+      <span class="Emphasis">For most gifts, supernormal powers and certain GM-defined skills</span>: Non-Existent. (That is, the default is non-existent. The trait itself exists in some character, somewhere.)
+    </p>
+    <p class="Textbody c7">
+      Each player should expect the GM to modify his character after creation - it's the nature of the game. The GM should expect to review each character before play. It would, in fact, be best if the characters were made in the presence of the GM so she can answer questions during the process.
+    </p>
+    <h2 id="toc26" class="c70">
+      <span class="SectionNumber">1.5 -</span> <a target="_self" id="RefHeadingToc198652649761757" name="RefHeadingToc198652649761757"></a><a target="_self" id="secsubjectivecharcreate" name="secsubjectivecharcreate"></a>Subjective Character Creation
+    </h2>
+    <p class="Firstparagraph">
+      <span class="c6">An easy way to create a character in Fudge is simply to write down everything about the character that you feel is important. Any attribute or skill should be rated using one of the levels Terrible through Superb (see Section</span> <a target="_self" class="Internet20link" href="#sectraitlevels"><span class="Internetlink">1.2</span></a><span class="c6">, Fudge Trait Levels).</span>
+    </p>
+    <p class="Textbody">
+      <span class="c6">It may be easiest, though, if the GM supplies a template of attributes she'll be using. See Section</span> <a target="_self" class="Internet20link" href="fudge_srd_09.html#seccharexamples"><span class="Internetlink">6.3</span></a><span class="c6">, Character Examples, for template ideas.</span>
+    </p>
+    <p class="Textbody c7">
+      The GM may also tell the player in advance that his character can be Superb in a certain number of attributes, Great in so many others, and Good in yet another group. For example, in an epic-style game with eight attributes, the GM allows one Superb attribute, two Greats, and three Goods. In a more realistic game, this is one Superb, one Great, and two Goods.
+    </p>
+    <p class="Textbody c7">
+      This can apply to skills, too: one Superb skill, two Great skills, and six Good skills is a respectable number for a realistic campaign, while two Superbs, three Greats, and ten Goods is quite generous, even in a highly cinematic game.
+    </p>
+    <p class="Textbody c7">
+      The GM may also simply limit the number of skills a character can take at character creation: 10, 15, or 20 are possible choices.
+    </p>
+    <p class="Textbody c7">
+      Gifts and faults can be restricted this way, also. For example, a GM allows a character to have two gifts, but he must take at least three faults. Taking another fault allows another gift, or another skill at Great, and so on.
+    </p>
+    <p class="Textbody c7">
+      These limitations help the player define the focus of the character a bit better: what is his best trait (what can he do best)?
+    </p>
+    <p class="Textbody c7">
+      A simple "two lower for one higher" trait-conversion mechanic can also be used. If the GM allows one Superb attribute, for example, the player may forego that and take two attributes at Great, instead. The converse may also be allowed: a player may swap two skills at Good to get one at Great.
+    </p>
+    <p class="Quotations">
+      <span class="StrongEmphasis">Example</span>: a player wants a Jack-of-all-trades character, and the GM has limits of one Superb skill, two Great skills and six Good skills. The player trades the one Superb skill limit for two Great skills: he can now take four skills at Great. However, he trades all four Great skills in order to have eight more Good skills. His character can now have 14 skills at Good, but none at any higher levels.
+    </p>
+    <p class="Textbody">
+      In the Subjective Character Creation system, it is easy to use both broad and narrow skill groups, as appropriate for the character. In these cases, a broad skill group is assumed to contain the phrase, "except as listed otherwise."
+    </p>
+    <p class="Textbody c7">
+      For example, a player wishes to play the science officer of a starship. He decides this character has spent so much time studying the sciences, that he's weak in most physical skills. So on his character sheet he could simply write:
+    </p>
+    <p class="Quotations">
+      Physical Skills: Poor
+    </p>
+    <p class="Textbody">
+      He also decides that his character's profession would take him out of the ship in vacuum quite a bit, to examine things. So he'd have to be somewhat skilled at zero-G maneuvering. So he then adds:
+    </p>
+    <p class="Quotations">
+      Zero-G Maneuvering: Good
+    </p>
+    <p class="Textbody">
+      Even though this is a physical skill, it is not at Poor because he specifically listed it as an exception to the broad category.
+    </p>
+    <p class="Textbody">
+      <span class="c6">When the character write-up is done, the player and GM meet and discuss the character. If the GM feels the character is too potent for the campaign she has in mind, she may ask the player to reduce the character's power - see Section</span> <a target="_self" class="Internet20link" href="#secminimizingabuse"><span class="Internetlink">1.9</span></a><span class="c6">, Minimizing Abuse.</span>
+    </p>
+    <p class="Textbody c7">
+      The GM may also need to suggest areas that she sees as being too weak - perhaps she has a game situation in mind that will test a trait the player didn't think of. Gentle hints, such as "Does he have any social skills?" can help the player through the weak spots. Of course, if there are multiple players, other PCs can compensate for an individual PC's weaknesses. In this case, the question to the whole group is then, "Does anyone have any social skills?"
+    </p>
+    <p class="Textbody c7">
+      Instead of the player writing up the character in terms of traits and levels, he can simply write out a prose description of his character. This requires the GM to translate everything into traits and appropriate levels, but that's not hard to do if the description is well written. This method actually produces some of the best characters.
+    </p>
+    <p class="Quotations">
+      <span class="StrongEmphasis">An example</span>:
+    </p>
+    <p class="Quotations">
+      GM: "I see you rate Captain Wallop's blaster skill highly, and also his piloting and gunnery, but I'm only allowing one Superb skill - which is he best at?"
+    </p>
+    <p class="Quotations">
+      Player: "Blaster!"
+    </p>
+    <p class="Quotations">
+      GM: "Okay, Superb Blaster. That would then be Great Piloting and Great Gunnery, all right? That leaves you with two more skills to be at Great, since I allow four to start out. Hmmm - I notice he successfully penetrated the main Khothi hive and rescued the kidnapped ambassador - that sounds like a Great Ability to Move Quietly to me - is that accurate, or would you describe it as some other ability?"
+    </p>
+    <p class="Quotations">
+      Player: "Uh, no - sorry, I didn't write that clearly enough. He disguised himself and pretended to be a Khothi worker!"
+    </p>
+    <p class="Quotations">
+      GM: "Ah, I see! How about Great Disguise skill and Great Acting ability, then? And he must be Good at the Khothi language, right?"
+    </p>
+    <p class="Quotations">
+      And so on.
+    </p>
+    <h2 id="toc27" class="c70">
+      <span class="SectionNumber">1.6 -</span> <a target="_self" id="RefHeadingToc198672649761757" name="RefHeadingToc198672649761757"></a><a target="_self" id="secobjectivecharcreate" name="secobjectivecharcreate"></a>Objective Character Creation
+    </h2>
+    <p class="Firstparagraph c7">
+      For those who don't mind counting numbers a bit, the following method creates interesting and well-balanced characters.
+    </p>
+    <p class="Textbody c7">
+      In this system, all traits start at default level. The GM then allows a number of free levels the players may use to raise selected traits to higher levels. Players may then lower certain traits in order to raise others even further. Finally, a player may opt to trade some levels of one trait type (such as attributes) for another (skills, for example). The whole process insures that no single character will dominate every aspect of play.
+    </p>
+    <h3 id="toc28" class="c71">
+      <span class="SectionNumber">1.6.1 -</span> <a target="_self" id="RefHeadingToc198692649761757" name="RefHeadingToc198692649761757"></a><a target="_self" id="secobjectiveattributes" name="secobjectiveattributes"></a>Attributes
+    </h3>
+    <p class="Firstparagraph c7">
+      A GM using the Objective Character Creation system should decide how many attributes she deems necessary in the campaign. She can choose to leave it up to each player, if she wishes. Players then have a number of free attribute levels equal to half the number of attributes (round up). For example, if she selects four attributes, each player starts with two free levels he can use to raise his character's attributes.
+    </p>
+    <p class="Textbody c7">
+      For a more high-powered game, the GM may allow a number of free levels equal to the number of attributes chosen.
+    </p>
+    <p class="Textbody c7">
+      All attributes are considered to be Fair until the player raises or lowers them. The cost of raising or lowering an attribute is:
+    </p>
+    <table id="Chapter1LadderValuestable" class="c91">
+      <colgroup>
+        <col class="c89">
+        <col class="c90">
+      </colgroup>
+      <tbody>
+        <tr class="c24">
+          <td class="c12">
+            <p class="TableContents c36">
+              +3
+            </p>
+          </td>
+          <td class="c12">
+            <p class="TableContents c36">
+              Superb
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="c13">
+            <p class="TableContents c36">
+              +2
+            </p>
+          </td>
+          <td class="c13">
+            <p class="TableContents c36">
+              Great
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="c13">
+            <p class="TableContents c36">
+              +1
+            </p>
+          </td>
+          <td class="c13">
+            <p class="TableContents c36">
+              Good
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="c13">
+            <p class="TableContents c36">
+              0
+            </p>
+          </td>
+          <td class="c13">
+            <p class="TableContents c36">
+              Fair
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="c13">
+            <p class="TableContents c36">
+              -1
+            </p>
+          </td>
+          <td class="c13">
+            <p class="TableContents c36">
+              Mediocre
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="c13">
+            <p class="TableContents c36">
+              -2
+            </p>
+          </td>
+          <td class="c13">
+            <p class="TableContents c36">
+              Poor
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="c14">
+            <p class="TableContents c36">
+              -3
+            </p>
+          </td>
+          <td class="c14">
+            <p class="TableContents c36">
+              Terrible
+            </p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="Textbody">
+      Thus, a player may raise his Strength attribute (which is Fair by default) to Good by spending one free attribute level. He could then spend another free level to raise Strength again to Great. This would exhaust his free levels if there were only four attributes - but he would have one more if there were six attributes, and eight more free levels if there were 20 attributes.
+    </p>
+    <p class="Textbody">
+      <span class="c6">When the free attribute levels have been exhausted, an attribute can be raised further by lowering another attribute an equal amount. (See also Section</span> <a target="_self" class="Internet20link" href="#sectradingtraits"><span class="Internetlink">1.6.4</span></a><span class="c6">, Trading Traits.) From the previous example, Strength can be raised one more level (to Superb) if the player lowers the character's Charm to Mediocre to compensate for the increase in Strength.</span>
+    </p>
+    <p class="Textbody c7">
+      If the GM allows the players to choose their own attributes, she may simply tell them to take half as many free levels as attributes they choose. If a player chooses an attribute and leaves it at Fair, that attribute does not count towards the total of attributes which determines the amount of free levels. That is, a player cannot simply add twelve attributes, all at Fair, in order to get six more free levels to raise the others with. GM-mandated attributes left at Fair do count when determining the number of free levels, though.
+    </p>
+    <p class="Textbody c7">
+      As an interesting possibility for those who want attributes and skills to reflect each other accurately, do not let the players adjust attribute levels at all. Instead, they select only skill levels, gifts and faults for their characters. When the character is done, the GM can then determine what attribute levels make sense for the skill levels chosen, and discuss it with the player.
+    </p>
+    <p class="Quotations">
+      <span class="StrongEmphasis">Example</span>: a character is made with many combat and wilderness skills, but no social skills. He also has a smattering of intelligence skills. The GM decides that this character has Strength, Dexterity and Health of Great from spending a lot of time outdoors, practicing with weapons, etc. She will even let the player choose one to be at Superb, if desired. Perception is probably Good, since wilderness survival depends on it. Any social attribute is Mediocre at best - possibly even Poor - while Intelligence is Mediocre or Fair. If the player objects to the low Intelligence ranking, the GM can point out that the character hasn't spent much time in skills that hone Intelligence, and if he wants his character's IQ to be higher, he should adjust his skill list.
+    </p>
+    <h3 id="toc29" class="c71">
+      <span class="SectionNumber">1.6.2 -</span> <a target="_self" id="RefHeadingToc198712649761757" name="RefHeadingToc198712649761757"></a><a target="_self" id="secobjectiveskills" name="secobjectiveskills"></a>Skills
+    </h3>
+    <p class="Firstparagraph c7">
+      In the Objective Character Creation system, each player has a number of free skill levels with which to raise his skills. Suggested limits are:
+    </p>
+    <ul class="c8">
+      <li>
+        <p class="MyList">
+          For Extremely Broad Skill Groups: 15 levels.
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          For Moderately Broad Skill Groups: 30 levels.
+        </p>
+      </li>
+      <li>
+        <p class="MyList">
+          For Specific Skills: 40 to 60 levels.
+        </p>
+      </li>
+    </ul>
+    <p class="Textbody">
+      <span class="c6">Ask the GM for the allotted amount, which will give you a clue as to how precisely to define your skills. Of course, the GM may choose any number that suits her, such as 23, 42, or 74…see Section</span> <a target="_self" class="Internet20link" href="fudge_srd_09.html#seccharexamples"><span class="Internetlink">6.3</span></a><span class="c6">, Character Examples. Gamemasters may devise their own skill lists to choose from - some possibilities are included in the skill lists on page.</span>
+    </p>
+    <p class="Textbody">
+      <span class="c6">Most skills have a default value of Poor unless the player raises or lowers them - see Section</span> <a target="_self" class="Internet20link" href="#secallocatingtraits"><span class="Internetlink">1.4</span></a><span class="c6">, Allocating Traits.</span>
+    </p>
+    <p class="Textbody c7">
+      Certain skills have a default of non-existent. These would include Languages, Karate, Nuclear Physics, or Knowledge of Aztec Rituals, which must be studied to be known at all. When a character studies such a skill (puts a level into it at character creation, or experience points later in the game), the level he gets it at depends on how hard it is to learn. Putting one level into learning the Spanish language, for example, would get it at Mediocre, since it's of average difficulty to learn. Nuclear Physics, on the other hand, might only be Poor or even Terrible with only one level put into it. It would take four levels just to get such a skill at Fair, for example.
+    </p>
+    <p class="Textbody c7">
+      For ease in character creation, use the following table:
+    </p>
+    <table id="Chapter1CostOfSkillsInObjectiveCharacterCreationtable" class="c46">
+      <colgroup>
+        <col class="c92">
+        <col class="c93">
+        <col class="c94">
+        <col class="c93">
+        <col class="c94">
+      </colgroup>
+      <tbody>
+        <tr>
+          <td colspan="5" class="c96">
+            <p class="TableCaption c95">
+              Cost of Skills in Objective Character Creation
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="c96">
+            <p class="c44">
+              &nbsp;
+            </p>
+          </td>
+          <td class="c96">
+            <p class="TableHeading">
+              &nbsp;
+            </p>
+            <p class="TableHeading">
+              <span class="StrongEmphasis">Easy</span>
+            </p>
+          </td>
+          <td class="c96">
+            <p class="TableHeading">
+              &nbsp;
+            </p>
+            <p class="TableHeading">
+              <span class="StrongEmphasis">Most</span>
+            </p>
+          </td>
+          <td class="c96">
+            <p class="TableHeading">
+              &nbsp;
+            </p>
+            <p class="TableHeading">
+              <span class="StrongEmphasis">Hard</span>
+            </p>
+          </td>
+          <td class="c96">
+            <p class="TableHeading">
+              <span class="StrongEmphasis">Very</span>
+            </p>
+            <p class="TableHeading">
+              <span class="StrongEmphasis">Hard</span>
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="c97">
+            <p class="TableContents c74">
+              Terrible
+            </p>
+          </td>
+          <td class="c97">
+            <p class="TableContents c36">
+              -2
+            </p>
+          </td>
+          <td class="c97">
+            <p class="TableContents c36">
+              -1
+            </p>
+          </td>
+          <td class="c97">
+            <p class="TableContents c36">
+              0
+            </p>
+          </td>
+          <td class="c97">
+            <p class="TableContents c36">
+              1
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="c98">
+            <p class="TableContents c74">
+              Poor
+            </p>
+          </td>
+          <td class="c98">
+            <p class="TableContents c36">
+              -1
+            </p>
+          </td>
+          <td class="c98">
+            <p class="TableContents c36">
+              0
+            </p>
+          </td>
+          <td class="c98">
+            <p class="TableContents c36">
+              1
+            </p>
+          </td>
+          <td class="c98">
+            <p class="TableContents c36">
+              2
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="c99">
+            <p class="TableContents c74">
+              Mediocre
+            </p>
+          </td>
+          <td class="c99">
+            <p class="TableContents c36">
+              0
+            </p>
+          </td>
+          <td class="c99">
+            <p class="TableContents c36">
+              1
+            </p>
+          </td>
+          <td class="c99">
+            <p class="TableContents c36">
+              2
+            </p>
+          </td>
+          <td class="c99">
+            <p class="TableContents c36">
+              3
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="c98">
+            <p class="TableContents c74">
+              Fair
+            </p>
+          </td>
+          <td class="c98">
+            <p class="TableContents c36">
+              1
+            </p>
+          </td>
+          <td class="c98">
+            <p class="TableContents c36">
+              2
+            </p>
+          </td>
+          <td class="c98">
+            <p class="TableContents c36">
+              3
+            </p>
+          </td>
+          <td class="c98">
+            <p class="TableContents c36">
+              4
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="c99">
+            <p class="TableContents c74">
+              Good
+            </p>
+          </td>
+          <td class="c99">
+            <p class="TableContents c36">
+              2
+            </p>
+          </td>
+          <td class="c99">
+            <p class="TableContents c36">
+              3
+            </p>
+          </td>
+          <td class="c99">
+            <p class="TableContents c36">
+              4
+            </p>
+          </td>
+          <td class="c99">
+            <p class="TableContents c36">
+              5
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="c98">
+            <p class="TableContents c74">
+              Great
+            </p>
+          </td>
+          <td class="c98">
+            <p class="TableContents c36">
+              3
+            </p>
+          </td>
+          <td class="c98">
+            <p class="TableContents c36">
+              4
+            </p>
+          </td>
+          <td class="c98">
+            <p class="TableContents c36">
+              5
+            </p>
+          </td>
+          <td class="c98">
+            <p class="TableContents c36">
+              6
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="c100">
+            <p class="TableContents c74">
+              Superb
+            </p>
+          </td>
+          <td class="c100">
+            <p class="TableContents c36">
+              4
+            </p>
+          </td>
+          <td class="c100">
+            <p class="TableContents c36">
+              5
+            </p>
+          </td>
+          <td class="c100">
+            <p class="TableContents c36">
+              6
+            </p>
+          </td>
+          <td class="c100">
+            <p class="TableContents c36">
+              7
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="c50">
+            <p class="TableContents c101">
+              Easy =
+            </p>
+          </td>
+          <td colspan="4" class="c50">
+            <p class="TableContents">
+              Cost of GM-Determined Easy Skills
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="c50">
+            <p class="TableContents c101">
+              Most =
+            </p>
+          </td>
+          <td colspan="4" class="c50">
+            <p class="TableContents">
+              Cost of Average Skill
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="c50">
+            <p class="TableContents c101">
+              Hard =
+            </p>
+          </td>
+          <td colspan="4" class="c50">
+            <p class="TableContents">
+              Cost of GM-Determined Hard Skills
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="c50">
+            <p class="TableContents c101">
+              VH =
+            </p>
+          </td>
+          <td colspan="4" class="c50">
+            <p class="TableContents">
+              Cost of GM-Determined Very Hard Skills
+            </p>
+            <p class="TableContents">
+              (usually related to Supernormal Powers)
+            </p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="Textbody">
+      <span class="c6">As in the Subjective Character Creation system, the GM may limit the number of Superb and Great skills each character may have at character creation. For a highly cinematic or super-powered game, no limit is necessary. For example, the GM sets a limit of one Superb skill, three or four Great skills, and eight or so Good skills. These limits can be exceeded through character development, of course. See Section</span> <a target="_self" class="Internet20link" href="fudge_srd_09.html#seccharexamples"><span class="Internetlink">6.3</span></a><span class="c6">, Character Examples.</span>
+    </p>
+    <p class="Textbody">
+      <span class="c6">Once the free levels are used up, a skill must be dropped one level (from the default Poor to Terrible) to raise another skill one level. (See also Section</span> <a target="_self" class="Internet20link" href="#sectradingtraits"><span class="Internetlink">1.6.4</span></a><span class="c6">, Trading Traits.) All choices are subject to GM veto, of course.</span>
+    </p>
+    <p class="Textbody c7">
+      It is possible to mix different breadths of skill groupings. A GM who has little interest in combat can simply choose Unarmed Combat, Melee Weapons and Ranged Weapons as the only three combat skills. But this does not stop her from using all the individual Social skills (and many more) listed as examples on page. If this option is chosen, the broad groups cost double the levels of the narrower groups.
+    </p>
+    <p class="Textbody c7">
+      Mixing skill group sizes within the same areas is awkward in the Objective Character Creation system. For example, it is difficult to have a generic Thief Skills group and also have individual skills of lockpicking, pick-pocketing, palming, security-device dismantling, etc. If she does wish to do this, then the broad skill group in this case has a maximum limit of Good, and triple cost to raise - or more, if the GM so mandates.
+    </p>
+    <p class="Textbody c7">
+      If the GM is using broad groups, a player may raise a specific skill (such as Poker, for example, instead of general Gambling skill). A player would give his character a specific skill when the GM is using broad-based skill groups to fit a character concept. Do not expect the character to be equally adept with the other skills in the group. This would be true for Groo<span class="c102"><a target="_self" href="#ftn1">1</a></span> the Wanderer, for instance, who would simply raise Sword skill, even if the GM is using the broad term Melee Weapons as a skill group. Groo would have, in fact, a Poor rating with all other Melee weapons, and this would accurately reflect the character.
+    </p>
+    <h3 id="toc30" class="c71">
+      <span class="SectionNumber">1.6.3 -</span> <a target="_self" id="RefHeadingToc198732649761757" name="RefHeadingToc198732649761757"></a><a target="_self" id="secobjectivesgifts" name="secobjectivesgifts"></a>Gifts &amp; Faults
+    </h3>
+    <p class="Firstparagraph c7">
+      If the GM has gifts in her game, she may allow player characters to start with one or two free gifts - more for epic campaigns. Any further gifts taken must be balanced by taking on a fault, or by trading traits.
+    </p>
+    <p class="Textbody c7">
+      A player may gain extra trait levels by taking GM-approved faults at the following rate:
+    </p>
+    <table id="Chapter1TradingFaultstable" class="c106">
+      <colgroup>
+        <col class="c103">
+        <col class="c104">
+        <col class="c105">
+      </colgroup>
+      <tbody>
+        <tr>
+          <td class="c20">
+            <p class="TableContents c101">
+              1 fault
+            </p>
+          </td>
+          <td class="c21">
+            <p class="TableContents c36">
+              =
+            </p>
+          </td>
+          <td class="c23">
+            <p class="TableContents c74">
+              1 gift.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="c25">
+            <p class="TableContents c101">
+              1 fault
+            </p>
+          </td>
+          <td class="c26">
+            <p class="TableContents c36">
+              =
+            </p>
+          </td>
+          <td class="c27">
+            <p class="TableContents c74">
+              2 attribute levels.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="c28">
+            <p class="TableContents c101">
+              1 fault
+            </p>
+          </td>
+          <td class="c29">
+            <p class="TableContents c36">
+              =
+            </p>
+          </td>
+          <td class="c30">
+            <p class="TableContents c74">
+              6 skill levels.
+            </p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="Textbody">
+      However, the GM may rule that a particular fault is not serious enough to be worth two attribute levels, but may be worth one attribute level or three skill levels. On the other hand, severe faults may be worth more attribute levels.
+    </p>
+    <h3 id="toc31" class="c71">
+      <span class="SectionNumber">1.6.4 -</span> <a target="_self" id="RefHeadingToc198752649761757" name="RefHeadingToc198752649761757"></a><a target="_self" id="sectradingtraits" name="sectradingtraits"></a>Trading Traits
+    </h3>
+    <p class="Firstparagraph c7">
+      During character creation, free levels may be traded (in either direction) at the following rate:
+    </p>
+    <table id="Chapter1TradingTraitstable" class="c110">
+      <colgroup>
+        <col class="c107">
+        <col class="c108">
+        <col class="c109">
+      </colgroup>
+      <tbody>
+        <tr class="c24">
+          <td class="c20">
+            <p class="TableContents c101">
+              1 attribute level
+            </p>
+          </td>
+          <td class="c21">
+            <p class="TableContents c36">
+              =
+            </p>
+          </td>
+          <td class="c23">
+            <p class="TableContents c74">
+              3 skill levels.
+            </p>
+          </td>
+        </tr>
+        <tr class="c24">
+          <td class="c25">
+            <p class="TableContents c101">
+              1 gift
+            </p>
+          </td>
+          <td class="c26">
+            <p class="TableContents c36">
+              =
+            </p>
+          </td>
+          <td class="c27">
+            <p class="TableContents c74">
+              6 skill levels.
+            </p>
+          </td>
+        </tr>
+        <tr class="c24">
+          <td class="c28">
+            <p class="TableContents c101">
+              1 gift
+            </p>
+          </td>
+          <td class="c29">
+            <p class="TableContents c36">
+              =
+            </p>
+          </td>
+          <td class="c30">
+            <p class="TableContents c74">
+              2 attribute levels.
+            </p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="Textbody">
+      Fudge Points cannot be traded without GM permission. (If tradable, each Fudge Point should be equal to one or two gifts.)
+    </p>
+    <p class="Textbody c7">
+      So a player with three free attribute levels and 30 free skill levels may trade three of his skill levels to get another free attribute level, or six skill levels to get another free gift.
+    </p>
+    <h2 id="toc32" class="c70">
+      <span class="SectionNumber">1.7 -</span> <a target="_self" id="RefHeadingToc198772649761757" name="RefHeadingToc198772649761757"></a><a target="_self" id="secuncommittedtraits" name="secuncommittedtraits"></a>Uncommitted Traits
+    </h2>
+    <p class="Firstparagraph c7">
+      Whether the character is created subjectively or objectively, each character has some free uncommitted traits (perhaps two or three). At some point in the game, a player will realize that he forgot something about the character that should have been mentioned. He may request to stop the action, and define a previously undefined trait, subject to the GM's approval. A sympathetic GM will allow this to happen even during combat time.
+    </p>
+    <p class="Textbody c7">
+      GM-set skill limits (such as one Superb, three Greats) are still in effect: if the character already has the maximum number of Superb skills allowed, he can't make an uncommitted trait a Superb skill.
+    </p>
+    <p class="Textbody">
+      <span class="c6">See the sample character, Dolores Ramirez, Section</span> <a target="_self" class="Internet20link" href="fudge_srd_09.html#secdoloresramirez"><span class="Internetlink">6.3.3.1</span></a><span class="c6">.</span>
+    </p>
+    <h2 id="toc33" class="c70">
+      <span class="SectionNumber">1.8 -</span> <a target="_self" id="RefHeadingToc198792649761757" name="RefHeadingToc198792649761757"></a><a target="_self" id="secrandom" name="secrandom"></a>Random Character Creation
+    </h2>
+    <p class="Firstparagraph c7">
+      Some players like to roll their attributes randomly. Here is one possible method to use in such cases. Alternate techniques can be easily designed.
+    </p>
+    <p class="Textbody c7">
+      Have the player roll 2d6 for each attribute. Use the following table to find the attribute level:
+    </p>
+    <table id="Chapter12d6RandomCharCreationAttributestable" class="c114">
+      <colgroup>
+        <col class="c111">
+        <col class="c112">
+        <col class="c113">
+      </colgroup>
+      <tbody>
+        <tr>
+          <td class="c20">
+            <p class="TableContents c101">
+              2
+            </p>
+          </td>
+          <td class="c21">
+            <p class="TableContents c36">
+              =
+            </p>
+          </td>
+          <td class="c23">
+            <p class="TableContents">
+              Terrible
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="c25">
+            <p class="TableContents c101">
+              4
+            </p>
+          </td>
+          <td class="c26">
+            <p class="TableContents c36">
+              =
+            </p>
+          </td>
+          <td class="c27">
+            <p class="TableContents">
+              Poor
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="c25">
+            <p class="TableContents c101">
+              3,5
+            </p>
+          </td>
+          <td class="c26">
+            <p class="TableContents c36">
+              =
+            </p>
+          </td>
+          <td class="c27">
+            <p class="TableContents">
+              Mediocre
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="c25">
+            <p class="TableContents c101">
+              6-8
+            </p>
+          </td>
+          <td class="c26">
+            <p class="TableContents c36">
+              =
+            </p>
+          </td>
+          <td class="c27">
+            <p class="TableContents">
+              Fair
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="c25">
+            <p class="TableContents c101">
+              9,11
+            </p>
+          </td>
+          <td class="c26">
+            <p class="TableContents c36">
+              =
+            </p>
+          </td>
+          <td class="c27">
+            <p class="TableContents">
+              Good
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="c25">
+            <p class="TableContents c101">
+              10
+            </p>
+          </td>
+          <td class="c26">
+            <p class="TableContents c36">
+              =
+            </p>
+          </td>
+          <td class="c27">
+            <p class="TableContents">
+              Great
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="c28">
+            <p class="TableContents c101">
+              12
+            </p>
+          </td>
+          <td class="c29">
+            <p class="TableContents c36">
+              =
+            </p>
+          </td>
+          <td class="c30">
+            <p class="TableContents">
+              Superb
+            </p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="Textbody">
+      The GM needs to decide if the player still gets the standard number of free levels or not. She may also restrict trading levels.
+    </p>
+    <p class="Textbody c7">
+      For skills, the results are read as:
+    </p>
+    <table id="Chapter12d6RandomCharCreationSkillstable" class="c114">
+      <colgroup>
+        <col class="c115">
+        <col class="c112">
+        <col class="c116">
+      </colgroup>
+      <tbody>
+        <tr>
+          <td class="c20">
+            <p class="TableContents c101">
+              2-5,12
+            </p>
+          </td>
+          <td class="c21">
+            <p class="TableContents c36">
+              =
+            </p>
+          </td>
+          <td class="c23">
+            <p class="TableContents">
+              Terrible
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="c25">
+            <p class="TableContents c101">
+              6-8
+            </p>
+          </td>
+          <td class="c26">
+            <p class="TableContents c36">
+              =
+            </p>
+          </td>
+          <td class="c27">
+            <p class="TableContents">
+              Poor
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="c25">
+            <p class="TableContents c101">
+              9-10
+            </p>
+          </td>
+          <td class="c26">
+            <p class="TableContents c36">
+              =
+            </p>
+          </td>
+          <td class="c27">
+            <p class="TableContents">
+              Mediocre
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="c28">
+            <p class="TableContents c101">
+              11
+            </p>
+          </td>
+          <td class="c29">
+            <p class="TableContents c36">
+              =
+            </p>
+          </td>
+          <td class="c30">
+            <p class="TableContents">
+              Fair
+            </p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="Textbody">
+      The player still gets the standard number of free skill levels, or the GM may allow only half the normal levels.
+    </p>
+    <p class="Textbody c7">
+      The GM can let the players choose their gifts and faults, or she may wish to make up separate tables of gifts and faults, and have the players roll once or twice on each. (Conflicting traits should be rerolled.) For example:
+    </p>
+    <table id="Chapter12d6RandomCharCreationGiftsFaultstable" class="c46">
+      <colgroup>
+        <col class="c117">
+        <col class="c118">
+        <col class="c119">
+      </colgroup>
+      <tbody>
+        <tr>
+          <td class="c59">
+            <p class="TableHeading c74">
+              <span class="StrongEmphasis">Roll</span>
+            </p>
+          </td>
+          <td class="c59">
+            <p class="TableHeading c74">
+              <span class="StrongEmphasis">Gift</span>
+            </p>
+          </td>
+          <td class="c59">
+            <p class="TableHeading c74">
+              <span class="StrongEmphasis">Fault</span>
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="c120">
+            <p class="TableContents c36">
+              2
+            </p>
+          </td>
+          <td class="c120">
+            <p class="TableContents">
+              Nice Appearance
+            </p>
+          </td>
+          <td class="c120">
+            <p class="TableContents">
+              Poor Appearance
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="c121">
+            <p class="TableContents c36">
+              3
+            </p>
+          </td>
+          <td class="c121">
+            <p class="TableContents">
+              Tough Hide
+            </p>
+          </td>
+          <td class="c121">
+            <p class="TableContents">
+              Bruises Easily
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="c66">
+            <p class="TableContents c36">
+              4
+            </p>
+          </td>
+          <td class="c66">
+            <p class="TableContents">
+              Charismatic
+            </p>
+          </td>
+          <td class="c66">
+            <p class="TableContents">
+              Aura of Untrustworthiness
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="c121">
+            <p class="TableContents c36">
+              5
+            </p>
+          </td>
+          <td class="c121">
+            <p class="TableContents">
+              Keen Hearing
+            </p>
+          </td>
+          <td class="c121">
+            <p class="TableContents">
+              Hard of Hearing
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="c66">
+            <p class="TableContents c36">
+              6
+            </p>
+          </td>
+          <td class="c66">
+            <p class="TableContents">
+              Detects Lies
+            </p>
+          </td>
+          <td class="c66">
+            <p class="TableContents">
+              Easily Gullible
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="c121">
+            <p class="TableContents c36">
+              7
+            </p>
+          </td>
+          <td class="c121">
+            <p class="TableContents">
+              Melodious Voice
+            </p>
+          </td>
+          <td class="c121">
+            <p class="TableContents">
+              Stammers
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="c40">
+            <p class="TableContents c36">
+              8
+            </p>
+          </td>
+          <td class="c40">
+            <p class="TableContents">
+              ...
+            </p>
+          </td>
+          <td class="c40">
+            <p class="TableContents">
+              ...
+            </p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="Textbody">
+      And so on. The GM should customize and complete to her taste. Of course, she could set up a 3d6 table instead of a 2d6 table, or even use a 1d6 table listing general gift or fault areas (Social, Physical, Emotional, Mental, Wealth/Status, etc.) and then roll again on an appropriate second table. This would allow 36 equally likely choices.
+    </p>
+    <h2 id="toc34" class="c70">
+      <span class="SectionNumber">1.9 -</span> <a target="_self" id="RefHeadingToc198812649761757" name="RefHeadingToc198812649761757"></a><a target="_self" id="secminimizingabuse" name="secminimizingabuse"></a>Minimizing Abuse
+    </h2>
+    <p class="Firstparagraph c7">
+      Obviously, character creation in Fudge can be abused. There are many ways to avoid this:
+    </p>
+    <ol class="c88">
+      <li>
+        <p class="MyList c87">
+          The GM can require that the character take another fault or two to balance the power. ("Okay, I'll allow you to have all that? but you need a challenge. Take on another weakness: maybe some secret vice, or be unable to tell a believable lie, or anything that fits the character concept that I can use to test you now and then.")
+        </p>
+      </li>
+      <li>
+        <p class="MyList c87">
+          She can simply veto any trait (or raised/lowered combination) she feels is abusive. ("I see you raised Battle-Axe in exchange for lowering Needlepoint. Hmmm.") This allows the GM to customize the power level of a game. For high-powered games, allow most anything; for less cinematic campaigns, make them trade equally useful trait for trait.
+        </p>
+      </li>
+      <li>
+        <p class="MyList c87">
+          She can simply note the character weaknesses and introduce a situation into every adventure where at least one of them is significant to the mission. ("You'll be sent as an emissary to the Wanduzi tribe - they value fine Needlepoint work above all other skills, by the way…")
+        </p>
+      </li>
+      <li>
+        <p class="MyList c87">
+          She can use the "disturbance in the force" technique of making sure that more powerful characters attract more serious problems. ("The bruiser enters the bar with a maniacal look in his eye. He scans the room for a few seconds, then begins to stare intently at you.")
+        </p>
+      </li>
+    </ol>
+
+    <section>
+      <hr class="footnoterule">
+      <aside id="ftn1">
+        <p class="Footnote">
+          <a target="_self" class="FootnoteSymbol" href="#bodyftn1">[1]</a> GROO is a trademark of Sergio Aragonés. If you don't know Groo, go to a comic book store and check him out
+        </p>
+      </aside>
+    </section>
+
+</main>
+
+</body>
+</html>
