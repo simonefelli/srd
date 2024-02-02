@@ -1,6 +1,6 @@
-// fonts-dejavu.css
+/* fonts-dejavu.css */
 
-// DejaVu Sans
+/* DejaVu Sans */
 @font-face {
   font-family: 'DejaVu Sans';
   src: url('fonts/DejaVuSans-ExtraLight.woff') format('woff');
@@ -8,7 +8,7 @@
   font-style: normal;
 }
 
-// DejaVu Serif
+/* DejaVu Serif */
 @font-face {
   font-family: 'DejaVu Serif';
   src: url('fonts/DejaVuSerif-BoldItalic.woff') format('woff');
@@ -34,7 +34,7 @@
   font-style: normal;
 }
 
-// DejaVu Serif Condensed
+/* DejaVu Serif Condensed */
 @font-face {
   font-family: 'DejaVu Serif Condensed';
   src: url('fonts/DejaVuSerifCondensed-BoldItalic.woff') format('woff');
