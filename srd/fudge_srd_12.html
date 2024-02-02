@@ -10,34 +10,36 @@
     <link rel="stylesheet" href="./fonts-dejavu.css">
     <link rel="stylesheet" href="./srd.css">
     <link rel="stylesheet" href="./layout.css">
-    <script>
-        // solve back button problems
-        window.onhashchange = function() {
-          window.location.href = window.location.href;
-        };
-    </script>
+
 </head>
 
 <body>
+
+<script src="./layout.js"></script>
 
 <header><a href="./index.html">Fudge System Reference Document</a></header>
 
 <!-- left-sidebar -->
 <div class="left-sidebar">
-    <div class="title">Table of content</div>
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn">
+        <span class="navicon">&nbsp;</span>
+    </label> 
+<div class="menu">
+    <div class="title"><a href="./toc.html">Table Of Content</a></div>
     <hr>
-    <div><a href="./index.html">Copyrights, Trademarks, and Licenses</a></div>
-    <div><a href="./fudge_srd_01.html">Introduction</a></div>
-    <div><a href="./fudge_srd_02.html">What is Fudge?</a></div>
-    <div><a href="./fudge_srd_03.html">Fudge in a Nutshell</a></div>
-    <div><a href="./fudge_srd_04.html">Chapter 1 – Character Creation</a></div>
-    <div><a href="./fudge_srd_05.html">Chapter 2 – Supernormal Powers</a></div>
-    <div><a href="./fudge_srd_06.html">Chapter 3 – Action Resolution</a></div>
-    <div><a href="./fudge_srd_07.html">Chapter 4 – Combat</a></div>
-    <div><a href="./fudge_srd_08.html">Chapter 5 – Character Development</a></div>
-    <div><a href="./fudge_srd_09.html">Chapter 6 – Tips and Examples</a></div>
-    <div><a href="./fudge_srd_10.html">Chapter 7 – The Addenda</a></div>
-    <div><a href="./fudge_srd_11.html">Chapter 8 – Fantasy Fudge</a></div>
+    <div class="ghost"><a href="./index.html">Copyrights, Trademarks, and Licenses</a></div>
+    <div class="ghost"><a href="./fudge_srd_01.html">Introduction</a></div>
+    <div class="ghost"><a href="./fudge_srd_02.html">What is Fudge?</a></div>
+    <div class="ghost"><a href="./fudge_srd_03.html">Fudge in a Nutshell</a></div>
+    <div class="ghost"><a href="./fudge_srd_04.html">Chapter 1 – Character Creation</a></div>
+    <div class="ghost"><a href="./fudge_srd_05.html">Chapter 2 – Supernormal Powers</a></div>
+    <div class="ghost"><a href="./fudge_srd_06.html">Chapter 3 – Action Resolution</a></div>
+    <div class="ghost"><a href="./fudge_srd_07.html">Chapter 4 – Combat</a></div>
+    <div class="ghost"><a href="./fudge_srd_08.html">Chapter 5 – Character Development</a></div>
+    <div class="ghost"><a href="./fudge_srd_09.html">Chapter 6 – Tips and Examples</a></div>
+    <div class="ghost"><a href="./fudge_srd_10.html">Chapter 7 – The Addenda</a></div>
+    <div class="ghost"><a href="./fudge_srd_11.html">Chapter 8 – Fantasy Fudge</a></div>
     <div><a href="./fudge_srd_12.html#toc264" class="active">Miscellaneous Charts and Information</a></div>
       <ul class="c9">	
         <li>
@@ -81,12 +83,12 @@
           </p>
         </li>
       </ul>
-    <div><a href="./fudge_srd_13.html">Open Game License Version 1.0a</a></div>
+    <div class="ghost"><a href="./fudge_srd_13.html">Open Game License Version 1.0a</a></div>
+</div>
 </div>
 
 <!-- main -->
 <main>
-
 
     <p class="Heading1FBMatter" id="toc264">
       <a target="_self" id="RefHeadingToc203412649761757" name="RefHeadingToc203412649761757"></a><a target="_self" id="miscellaneouschartsandinformation" name="miscellaneouschartsandinformation"></a>Miscellaneous Charts and Information
@@ -1372,7 +1374,6 @@
         </tr>
       </tbody>
     </table>
-
 
 </main>
 

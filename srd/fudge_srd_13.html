@@ -10,36 +10,39 @@
     <link rel="stylesheet" href="./fonts-dejavu.css">
     <link rel="stylesheet" href="./srd.css">
     <link rel="stylesheet" href="./layout.css">
-    <script>
-        // solve back button problems
-        window.onhashchange = function() {
-          window.location.href = window.location.href;
-        };
-    </script>
+
 </head>
 
 <body>
+
+<script src="./layout.js"></script>
 
 <header><a href="./index.html">Fudge System Reference Document</a></header>
 
 <!-- left-sidebar -->
 <div class="left-sidebar">
-    <div class="title">Table of content</div>
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn">
+        <span class="navicon">&nbsp;</span>
+    </label> 
+<div class="menu">
+    <div class="title"><a href="./toc.html">Table Of Content</a></div>
     <hr>
-    <div><a href="./index.html">Copyrights, Trademarks, and Licenses</a></div>
-    <div><a href="./fudge_srd_01.html">Introduction</a></div>
-    <div><a href="./fudge_srd_02.html">What is Fudge?</a></div>
-    <div><a href="./fudge_srd_03.html">Fudge in a Nutshell</a></div>
-    <div><a href="./fudge_srd_04.html">Chapter 1 – Character Creation</a></div>
-    <div><a href="./fudge_srd_05.html">Chapter 2 – Supernormal Powers</a></div>
-    <div><a href="./fudge_srd_06.html">Chapter 3 – Action Resolution</a></div>
-    <div><a href="./fudge_srd_07.html">Chapter 4 – Combat</a></div>
-    <div><a href="./fudge_srd_08.html">Chapter 5 – Character Development</a></div>
-    <div><a href="./fudge_srd_09.html">Chapter 6 – Tips and Examples</a></div>
-    <div><a href="./fudge_srd_10.html">Chapter 7 – The Addenda</a></div>
-    <div><a href="./fudge_srd_11.html">Chapter 8 – Fantasy Fudge</a></div>
-    <div><a href="./fudge_srd_12.html">Miscellaneous Charts and Information</a></div>
+    <div class="ghost"><a href="./index.html">Copyrights, Trademarks, and Licenses</a></div>
+    <div class="ghost"><a href="./fudge_srd_01.html">Introduction</a></div>
+    <div class="ghost"><a href="./fudge_srd_02.html">What is Fudge?</a></div>
+    <div class="ghost"><a href="./fudge_srd_03.html">Fudge in a Nutshell</a></div>
+    <div class="ghost"><a href="./fudge_srd_04.html">Chapter 1 – Character Creation</a></div>
+    <div class="ghost"><a href="./fudge_srd_05.html">Chapter 2 – Supernormal Powers</a></div>
+    <div class="ghost"><a href="./fudge_srd_06.html">Chapter 3 – Action Resolution</a></div>
+    <div class="ghost"><a href="./fudge_srd_07.html">Chapter 4 – Combat</a></div>
+    <div class="ghost"><a href="./fudge_srd_08.html">Chapter 5 – Character Development</a></div>
+    <div class="ghost"><a href="./fudge_srd_09.html">Chapter 6 – Tips and Examples</a></div>
+    <div class="ghost"><a href="./fudge_srd_10.html">Chapter 7 – The Addenda</a></div>
+    <div class="ghost"><a href="./fudge_srd_11.html">Chapter 8 – Fantasy Fudge</a></div>
+    <div class="ghost"><a href="./fudge_srd_12.html">Miscellaneous Charts and Information</a></div>
     <div><a href="./fudge_srd_13.html#toc273" class="active">Open Game License Version 1.0a</a></div>
+</div>
 </div>
 
 <!-- main -->
@@ -52,7 +55,7 @@
       The following text is the property of Wizards of the Coast, Inc. and is Copyright 2000 Wizards of the Coast, Inc ("Wizards"). All Rights Reserved.
     </p>
     <p class="Textbody">
-      <span class="StrongEmphasis">1.</span> <span class="c6">Definitions: (a) "Contributors" means the copyright and/or trademark owners who have contributed Open Game Content; (b) "Derivative Material" means copyrighted material including derivative works and translations (including into other computer languages), potation, modification, correction, addition, extension, upgrade, improvement, compilation, abridgment or other form in which an existing work may be recast, transformed or adapted; (c) "Distribute" means to reproduce, license, rent, lease, sell, broadcast, publicly display, transmit or otherwise distribute; (d) "Open Game Content" means the game mechanic and includes the methods, procedures, processes and routines to the extent such content does not embody the Product Identity and is an enhancement over the prior art and any additional content clearly identified as Open Game Content by the Contributor, and means any work covered by this License, including translations and derivative works under copyright law, but specifically excludes Product Identity. (e) "Product Identity" means product and product line names, logos and identifying marks including trade dress; artifacts; creatures characters; stories, storylines, plots, thematic elements, dialogue, incidents, language, artwork, symbols, designs, depictions, likenesses, formats, poses, concepts, themes and graphic, photographic and other visual or audio representations; names and descriptions of characters, spells, enchantments, personalities, teams, personas, likenesses and special abilities; places, locations, environments, creatures, equipment, magical or supernatural abilities or effects, logos, symbols, or graphic designs; and any other trademark or registered trademark clearly identified as Product identity by the owner of the Product Identity, and which specifically excludes the Open Game Content; (f) "Trademark" means the logos, names, mark, sign, motto, designs that are used by a Contributor to identify itself or its products or the associated products contributed to the Open Game License by the Contributor (g) "Use", "Used" or "Using" means to use, Distribute, copy, edit, format, modify, translate and otherwise create Derivative Material of Open Game Content. (h) "You" or "Your" means the licensee in terms of this agreement.</span>
+       <a id="appoglsec1" name="appoglsec1"></a><span class="StrongEmphasis">1.</span> <span class="c6">Definitions: (a) "Contributors" means the copyright and/or trademark owners who have contributed Open Game Content; (b) "Derivative Material" means copyrighted material including derivative works and translations (including into other computer languages), potation, modification, correction, addition, extension, upgrade, improvement, compilation, abridgment or other form in which an existing work may be recast, transformed or adapted; (c) "Distribute" means to reproduce, license, rent, lease, sell, broadcast, publicly display, transmit or otherwise distribute; (d) "Open Game Content" means the game mechanic and includes the methods, procedures, processes and routines to the extent such content does not embody the Product Identity and is an enhancement over the prior art and any additional content clearly identified as Open Game Content by the Contributor, and means any work covered by this License, including translations and derivative works under copyright law, but specifically excludes Product Identity. (e) "Product Identity" means product and product line names, logos and identifying marks including trade dress; artifacts; creatures characters; stories, storylines, plots, thematic elements, dialogue, incidents, language, artwork, symbols, designs, depictions, likenesses, formats, poses, concepts, themes and graphic, photographic and other visual or audio representations; names and descriptions of characters, spells, enchantments, personalities, teams, personas, likenesses and special abilities; places, locations, environments, creatures, equipment, magical or supernatural abilities or effects, logos, symbols, or graphic designs; and any other trademark or registered trademark clearly identified as Product identity by the owner of the Product Identity, and which specifically excludes the Open Game Content; (f) "Trademark" means the logos, names, mark, sign, motto, designs that are used by a Contributor to identify itself or its products or the associated products contributed to the Open Game License by the Contributor (g) "Use", "Used" or "Using" means to use, Distribute, copy, edit, format, modify, translate and otherwise create Derivative Material of Open Game Content. (h) "You" or "Your" means the licensee in terms of this agreement.</span>
     </p>
     <p class="Textbody">
       <span class="StrongEmphasis">2.</span> <span class="c6">The License: This License applies to any Open Game Content that contains a notice indicating that the Open Game Content may only be Used under and in terms of this License. You must affix such a notice to any Open Game Content that you Use. No terms may be added to or subtracted from this License except as described by the License itself. No other terms or conditions may be applied to any Open Game Content distributed using this License.</span>
@@ -102,7 +105,6 @@
     <p class="Textbody">
       <span class="Emphasis">Fudge System Reference Document</span> <span class="c6">Copyright 2005, Grey Ghost Press, Inc.; Authors Steffan O'Sullivan and Ann Dupuis, with additional material by Peter Bonney, Deird'Re Brooks, Reimer Behrends, Shawn Garbett, Steven Hammond, Ed Heil, Bernard Hsiung, Sedge Lewis, Gordon McCormick, Kent Matthewson, Peter Mikelsons, Anthony Roberson, Andy Skinner, Stephan Szabo, John Ughrin., Dmitri Zagidulin</span>
     </p>
-
 
 </main>
 

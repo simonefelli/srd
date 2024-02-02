@@ -10,21 +10,23 @@
     <link rel="stylesheet" href="./fonts-dejavu.css">
     <link rel="stylesheet" href="./srd.css">
     <link rel="stylesheet" href="./layout.css">
-    <script>
-        // solve back button problems
-        window.onhashchange = function() {
-          window.location.href = window.location.href;
-        };
-    </script>
+
 </head>
 
 <body>
+
+<script src="./layout.js"></script>
 
 <header><a href="./index.html">Fudge System Reference Document</a></header>
 
 <!-- left-sidebar -->
 <div class="left-sidebar">
-    <div class="title">Table of content</div>
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn">
+        <span class="navicon">&nbsp;</span>
+    </label> 
+<div class="menu">
+    <div class="title"><a href="./toc.html">Table Of Content</a></div>
     <hr>
     <div><a href="./index.html#toc0" class="active">Copyrights, Trademarks, and Licenses</a></div>
       <ul class="c9">
@@ -34,19 +36,20 @@
           </p>
         </li>
       </ul>
-    <div><a href="./fudge_srd_01.html">Introduction</a></div>
-    <div><a href="./fudge_srd_02.html">What is Fudge?</a></div>
-    <div><a href="./fudge_srd_03.html">Fudge in a Nutshell</a></div>
-    <div><a href="./fudge_srd_04.html">Chapter 1 – Character Creation</a></div>
-    <div><a href="./fudge_srd_05.html">Chapter 2 – Supernormal Powers</a></div>
-    <div><a href="./fudge_srd_06.html">Chapter 3 – Action Resolution</a></div>
-    <div><a href="./fudge_srd_07.html">Chapter 4 – Combat</a></div>
-    <div><a href="./fudge_srd_08.html">Chapter 5 – Character Development</a></div>
-    <div><a href="./fudge_srd_09.html">Chapter 6 – Tips and Examples</a></div>
-    <div><a href="./fudge_srd_10.html">Chapter 7 – The Addenda</a></div>
-    <div><a href="./fudge_srd_11.html">Chapter 8 – Fantasy Fudge</a></div>
-    <div><a href="./fudge_srd_12.html">Miscellaneous Charts and Information</a></div>
-    <div><a href="./fudge_srd_13.html">Open Game License Version 1.0a</a></div>
+    <div class="ghost"><a href="./fudge_srd_01.html">Introduction</a></div>
+    <div class="ghost"><a href="./fudge_srd_02.html">What is Fudge?</a></div>
+    <div class="ghost"><a href="./fudge_srd_03.html">Fudge in a Nutshell</a></div>
+    <div class="ghost"><a href="./fudge_srd_04.html">Chapter 1 – Character Creation</a></div>
+    <div class="ghost"><a href="./fudge_srd_05.html">Chapter 2 – Supernormal Powers</a></div>
+    <div class="ghost"><a href="./fudge_srd_06.html">Chapter 3 – Action Resolution</a></div>
+    <div class="ghost"><a href="./fudge_srd_07.html">Chapter 4 – Combat</a></div>
+    <div class="ghost"><a href="./fudge_srd_08.html">Chapter 5 – Character Development</a></div>
+    <div class="ghost"><a href="./fudge_srd_09.html">Chapter 6 – Tips and Examples</a></div>
+    <div class="ghost"><a href="./fudge_srd_10.html">Chapter 7 – The Addenda</a></div>
+    <div class="ghost"><a href="./fudge_srd_11.html">Chapter 8 – Fantasy Fudge</a></div>
+    <div class="ghost"><a href="./fudge_srd_12.html">Miscellaneous Charts and Information</a></div>
+    <div class="ghost"><a href="./fudge_srd_13.html">Open Game License Version 1.0a</a></div>
+</div>
 </div>
 
 <!-- main -->
@@ -94,7 +97,7 @@
     <p class="GenericNoIndent">
       If after reviewing all of the above you still have questions about creating Fudge materials under either license, please contact Ann Dupuis at ghostgames@fudgerpg.com, and/or consult with an attorney practicing in intellectual property law.
     </p>
-    <p class="Textbody c7"> (HTML version, based on <a class="Internet20link" href="http://www.sonic.net/%7Erknop/php/Omar/fudge/srd.php"><span class="c2">Omar's LaTeX source</span></a>, revised by Simone Felli. Vers. 0.47) </p>
+    <p class="Textbody c7"> (HTML version, based on <a class="Internet20link" href="http://www.sonic.net/%7Erknop/php/Omar/fudge/srd.php"><span class="c2">Omar's LaTeX source</span></a>, revised by Simone Felli. Vers. 0.48) </p>
     <p class="Heading2NoNum" id="toc1">
       <a target="_self" id="RefHeadingToc148071708962466" name="RefHeadingToc148071708962466"></a>Open Game Content
     </p>

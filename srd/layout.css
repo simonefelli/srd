@@ -1,3 +1,4 @@
+/* --- body styles --- */
 
 body {
   display: grid;
@@ -5,8 +6,11 @@ body {
   margin: 0;
   font-family: serif;
   grid-template-rows: auto 1fr;
-  grid-template-columns: minmax(200px, auto) 1fr;
+  grid-template-columns: auto 1fr;
 }
+
+
+/* --- header styles --- */
 
 header {
   font-size: larger;
@@ -19,6 +23,14 @@ header {
   grid-column-end: 3;
 }
 
+header a:visited {
+  color:inherit;
+  text-decoration:none;
+}
+
+
+/* --- left-sidebar styles --- */
+
 .left-sidebar {
   overflow: scroll;
   background-color: #f0f0f0;
@@ -29,34 +41,12 @@ header {
   grid-column-end: 2;
 }
 
-main {
-  overflow: auto;
-  padding: 0rem 1rem 1rem 1rem;
-  grid-row-start: 2;
-  grid-column-start: 2;
-  grid-row-end: 3;
-  grid-column-end: 3;
-}
-
-header a:visited {
-  color:inherit;
-  text-decoration:none;
-}
-
-.left-sidebar .title {
-  padding-top: 1em;
-  padding-bottom: 0.5em;
-  font-family: serif;
-  font-weight: bold;
-  font-size: large;
-}
-
 .left-sidebar a {
   display: inline-block;
   background-color: #eee;
   color: black;
   padding: 4px;
-  margin-top: 6px;
+  margin-top: 4px;
   text-decoration: none;
 }
 
@@ -74,42 +64,182 @@ header a:visited {
   text-decoration:none;
 }
 
+.left-sidebar .title {
+  padding-top: 0;
+  font-family: serif;
+  font-weight: bold;
+  font-size: inherit;
+}
+
+.left-sidebar .title a {
+  border: 2px solid;
+  border-radius: 8px;
+  width: 95%;
+  text-align: center;
+}
 
 
-/* responsive section */
+/* --- menu styles --- */
 
-@media screen and (max-width: 1024px) {
+.menu {
+  margin-top: -1.4em;
+}
+
+
+/* --- menu btn --- */
+
+.menu-btn {
+  display: none;
+}
+
+
+/* --- main styles --- */
+
+main {
+  overflow: auto;
+  padding: 0rem 1rem 1rem 1rem;
+  grid-row-start: 2;
+  grid-column-start: 2;
+  grid-row-end: 3;
+  grid-column-end: 3;
+}
+
+
+
+/* --------------- responsive section --------------- */
+
+@media screen and (max-width: 864px) {
 	
-  body {
-    display: grid;
-    height: 100vh;
-    margin: 0;
-    font-family: serif;
-    grid-template-rows: auto auto auto;
-    grid-template-columns: auto;
-  }
-  
-  header {
-    grid-row-start: 1;
-    grid-column-start: 1;
-    grid-row-end: 2;
-    grid-column-end: 2;
-  }
-  
-  .left-sidebar {
-    overflow: inherit;
-    grid-row-start: 2;
-    grid-column-start: 1;
-    grid-row-end: 3;
-    grid-column-end: 2;
-  }
-  
-  main {
-  overflow: inherit;
+/* --- body styles --- */
+
+body {
+  grid-template-rows: auto auto 1fr;
+  grid-template-columns: 1fr;
+}
+
+
+/* --- header styles --- */
+
+header {
+  font-size: 1.1em;
+  padding: 0.5rem;
+  max-height: 1.5em;
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-row-end: 2;
+  grid-column-end: 2;
+}
+
+
+/* --- left-sidebar styles --- */
+
+.left-sidebar {
+  padding-top: 0rem;
+  padding-right: 0rem;
+  padding-bottom: 0rem;
+  padding-left: 0.5rem;
+  grid-row-start: 2;
+  grid-column-start: 1;
+  grid-row-end: 3;
+  grid-column-end: 2;
+}
+
+.left-sidebar .title {
+  padding-top: 3px;
+}
+
+/* --- menu styles --- */
+
+.menu {
+  clear: both;
+  max-height: 0;
+  margin-top: 0;
+  transition: max-height .2s ease-out;
+}
+
+.menu .ghost {
+  display: none;
+}
+
+
+/* --- menu icon --- */
+
+.menu-icon {
+  position: absolute;	
+  float: right;  
+  cursor: pointer;
+  padding: 1em;
+  top: 3px;
+  right: -6px;  
+  color: white;
+}
+
+.menu-icon .navicon {
+  display: block;
+  position: relative;  
+  background: white;
+  height: 2px;
+  width: 18px;
+  transition: background .2s ease-out;
+}
+
+.menu-icon .navicon:before,
+.menu-icon .navicon:after {
+  display: block;  
+  position: absolute;  
+  background: white;
+  content: '';
+  height: 100%;
+  width: 100%;  
+  transition: all .2s ease-out;
+}
+
+.menu-icon .navicon:before {
+  top: 5px;
+}
+
+.menu-icon .navicon:after {
+  top: -5px;
+}
+
+
+/* --- menu btn --- */
+
+.menu-btn {
+  position: absolute;
+  top: 10px;
+  right: 5em;  
+}
+
+.menu-btn:checked ~ .menu {
+  max-height: 300px;
+}
+
+.menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+
+/* --- main styles --- */
+
+main {
   grid-row-start: 3;
   grid-column-start: 1;
   grid-row-end: 4;
   grid-column-end: 2;
-  }
+}
 
 }

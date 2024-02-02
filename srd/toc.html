@@ -1,0 +1,1208 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fudge System Reference Document</title>
+    <meta name="description" content="Fudge is a generic role-playing game system for use in freeform role-playing games. The name &quot;FUDGE&quot; was once an acronym for Freeform Universal Donated (later, Do-it-yourself) Gaming Engine and, though the acronym has since been dropped, that phrase remains a good summation of the game's design goals. Fudge has been nominated for an Origins Award for Best Role-Playing Game System for the Deryni Role-Playing Game. Rather than being a rigidly pre-defined set of rules like d20 System or GURPS, Fudge offers a customizable toolkit for building the users' own specialized role-playing game system. Such things as what attributes and skills will define characters are left to be determined by the Game Master and players, and several different optional systems for resolving actions and conflicts are offered. Fudge is not tied to any particular genre or setting and world builders are encouraged to invent appropriate attributes and rules tailored to the campaign.">
+    <meta name="author" content="Simone Felli">
+    <link rel="stylesheet" href="./fonts-dejavu.css">
+    <link rel="stylesheet" href="./srd.css">
+    <link rel="stylesheet" href="./layout.css">
+
+</head>
+
+<body>
+
+<script src="./layout.js"></script>
+
+<header><a href="./index.html">Fudge System Reference Document</a></header>
+
+<!-- left-sidebar -->
+<div class="left-sidebar">
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn">
+        <span class="navicon">&nbsp;</span>
+    </label> 
+<div class="menu">
+    <div class="title"><a href="./toc.html" class="active">Table Of Content</a></div>
+    <hr>
+    <div><a href="./index.html">Copyrights, Trademarks, and Licenses</a></div>
+    <div><a href="./fudge_srd_01.html">Introduction</a></div>
+    <div><a href="./fudge_srd_02.html">What is Fudge?</a></div>
+    <div><a href="./fudge_srd_03.html">Fudge in a Nutshell</a></div>
+    <div><a href="./fudge_srd_04.html">Chapter 1 – Character Creation</a></div>
+    <div><a href="./fudge_srd_05.html">Chapter 2 – Supernormal Powers</a></div>
+    <div><a href="./fudge_srd_06.html">Chapter 3 – Action Resolution</a></div>
+    <div><a href="./fudge_srd_07.html">Chapter 4 – Combat</a></div>
+    <div><a href="./fudge_srd_08.html">Chapter 5 – Character Development</a></div>
+    <div><a href="./fudge_srd_09.html">Chapter 6 – Tips and Examples</a></div>
+    <div><a href="./fudge_srd_10.html">Chapter 7 – The Addenda</a></div>
+    <div><a href="./fudge_srd_11.html">Chapter 8 – Fantasy Fudge</a></div>
+    <div><a href="./fudge_srd_12.html">Miscellaneous Charts and Information</a></div>
+    <div><a href="./fudge_srd_13.html">Open Game License Version 1.0a</a></div>
+</div>
+</div>
+
+<!-- main -->
+<main>
+
+    <section id="TableofContents">
+      <h1 class="ContentsHeading">
+        Table of Contents
+      </h1>
+    <p class="Firstparagraph"> <span class="c6">
+	&nbsp;
+	</span></p>
+      <ul class="c9">
+        <li>
+          <p class="Contents1">
+            <a target="_self" href="./index.html#toc0">Copyrights, Trademarks, and Licenses</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents2">
+            <a target="_self" href="./index.html#toc1">Open Game Content</a>
+          </p>
+        </li>
+
+        <li>
+          <p class="Contents1">
+            <a target="_self" href="./fudge_srd_01.html#toc2">Introduction</a>
+          </p>
+        </li>
+
+        <li>
+          <p class="Contents1">
+            <a target="_self" href="./fudge_srd_02.html#toc3">What is Fudge?</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents2">
+            <a target="_self" href="./fudge_srd_02.html#toc4">Some Highlights of Fudge</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents2">
+            <a target="_self" href="./fudge_srd_02.html#toc5">Terminology</a>
+          </p>
+        </li>
+
+        <li>
+          <p class="Contents1">
+            <a target="_self" href="./fudge_srd_03.html#toc6">Fudge in a Nutshell</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents2">
+            <a target="_self" href="./fudge_srd_03.html#toc7">Characters and Character Traits</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents2">
+            <a target="_self" href="./fudge_srd_03.html#toc8">Character Creation</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents2">
+            <a target="_self" href="./fudge_srd_03.html#toc9">Scale - Strength and Mass</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents2">
+            <a target="_self" href="./fudge_srd_03.html#toc10">Action Resolution</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents2">
+            <a target="_self" href="./fudge_srd_03.html#toc11">Unopposed Actions</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents2">
+            <a target="_self" href="./fudge_srd_03.html#toc12">Opposed Actions</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents2">
+            <a target="_self" href="./fudge_srd_03.html#toc13">Fudge Dice and Other Random Generators</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents2">
+            <a target="_self" href="./fudge_srd_03.html#toc14">Wounds</a>
+          </p>
+        </li>
+
+        <li>
+          <p class="Contents1">
+            <span class="SectionNumber">Chapter 1 -</span> <a target="_self" href="./fudge_srd_04.html#toc15">Character Creation</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents2">
+            <span class="SectionNumber">1.1 -</span> <a target="_self" href="./fudge_srd_04.html#toc16">Character Creation Terms</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents2">
+            <span class="SectionNumber">1.2 -</span> <a target="_self" href="./fudge_srd_04.html#toc17">Fudge Trait Levels</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents2">
+            <span class="SectionNumber">1.3 -</span> <a target="_self" href="./fudge_srd_04.html#toc18">Character Traits</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">1.3.1 -</span> <a target="_self" href="./fudge_srd_04.html#toc19">Attributes</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">1.3.2 -</span> <a target="_self" href="./fudge_srd_04.html#toc20">Skills</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">1.3.3 -</span> <a target="_self" href="./fudge_srd_04.html#toc21">Gifts</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">1.3.4 -</span> <a target="_self" href="./fudge_srd_04.html#toc22">Faults</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">1.3.5 -</span> <a target="_self" href="./fudge_srd_04.html#toc23">Personality</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">1.3.6 -</span> <a target="_self" href="./fudge_srd_04.html#toc24">Fudge Points</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents2">
+            <span class="SectionNumber">1.4 -</span> <a target="_self" href="./fudge_srd_04.html#toc25">Allocating Traits</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents2">
+            <span class="SectionNumber">1.5 -</span> <a target="_self" href="./fudge_srd_04.html#toc26">Subjective Character Creation</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents2">
+            <span class="SectionNumber">1.6 -</span> <a target="_self" href="./fudge_srd_04.html#toc27">Objective Character Creation</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">1.6.1 -</span> <a target="_self" href="./fudge_srd_04.html#toc28">Attributes</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">1.6.2 -</span> <a target="_self" href="./fudge_srd_04.html#toc29">Skills</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">1.6.3 -</span> <a target="_self" href="./fudge_srd_04.html#toc30">Gifts &amp; Faults</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">1.6.4 -</span> <a target="_self" href="./fudge_srd_04.html#toc31">Trading Traits</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents2">
+            <span class="SectionNumber">1.7 -</span> <a target="_self" href="./fudge_srd_04.html#toc32">Uncommitted Traits</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents2">
+            <span class="SectionNumber">1.8 -</span> <a target="_self" href="./fudge_srd_04.html#toc33">Random Character Creation</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents2">
+            <span class="SectionNumber">1.9 -</span> <a target="_self" href="./fudge_srd_04.html#toc34">Minimizing Abuse</a>
+          </p>
+        </li>
+
+        <li>
+          <p class="Contents1">
+            <span class="SectionNumber">Chapter 2 -</span> <a target="_self" href="./fudge_srd_05.html#toc35">Supernormal Powers</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents2">
+            <span class="SectionNumber">2.1 -</span> <a target="_self" href="./fudge_srd_05.html#toc36">Supernormal Power Terms</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents2">
+            <span class="SectionNumber">2.2 -</span> <a target="_self" href="./fudge_srd_05.html#toc37">Powers at Character Creation</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">2.2.1 -</span> <a target="_self" href="./fudge_srd_05.html#toc38">Powers Available</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">2.2.2 -</span> <a target="_self" href="./fudge_srd_05.html#toc39">Associated Skills</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">2.2.3 -</span> <a target="_self" href="./fudge_srd_05.html#toc40">Combat Powers</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents2">
+            <span class="SectionNumber">2.3 -</span> <a target="_self" href="./fudge_srd_05.html#toc41">Non-humans</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">2.3.1 -</span> <a target="_self" href="./fudge_srd_05.html#toc42">Strength and Mass</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">2.3.2 -</span> <a target="_self" href="./fudge_srd_05.html#toc43">Speed</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">2.3.3 -</span> <a target="_self" href="./fudge_srd_05.html#toc44">Scale Correlations</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">2.3.4 -</span> <a target="_self" href="./fudge_srd_05.html#toc45">Cost of Scale</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">2.3.5 -</span> <a target="_self" href="./fudge_srd_05.html#toc46">Racial Bonuses and Penalties</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents2">
+            <span class="SectionNumber">2.4 -</span> <a target="_self" href="./fudge_srd_05.html#toc47">Legendary Heroes</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents2">
+            <span class="SectionNumber">2.5 -</span> <a target="_self" href="./fudge_srd_05.html#toc48">Magic</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents2">
+            <span class="SectionNumber">2.6 -</span> <a target="_self" href="./fudge_srd_05.html#toc49">Miracles</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents2">
+            <span class="SectionNumber">2.7 -</span> <a target="_self" href="./fudge_srd_05.html#toc50">Psi</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents2">
+            <span class="SectionNumber">2.8 -</span> <a target="_self" href="./fudge_srd_05.html#toc51">Superpowers</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents2">
+            <span class="SectionNumber">2.9 -</span> <a target="_self" href="./fudge_srd_05.html#toc52">Cybernetic Enhancements</a>
+          </p>
+        </li>
+
+        <li>
+          <p class="Contents1">
+            <span class="SectionNumber">Chapter 3 -</span> <a target="_self" href="./fudge_srd_06.html#toc53">Action Resolution</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents2">
+            <span class="SectionNumber">3.1 -</span> <a target="_self" href="./fudge_srd_06.html#toc54">Action Resolution Terms</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents2">
+            <span class="SectionNumber">3.2 -</span> <a target="_self" href="./fudge_srd_06.html#toc55">Rolling the Dice</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">3.2.1 -</span> <a target="_self" href="./fudge_srd_06.html#toc56">Reading the Dice: Fudge Dice</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">3.2.2 -</span> <a target="_self" href="./fudge_srd_06.html#toc57">Other Dice Techniques</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">3.2.3 -</span> <a target="_self" href="./fudge_srd_06.html#toc58">Success Rates</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents2">
+            <span class="SectionNumber">3.3 -</span> <a target="_self" href="./fudge_srd_06.html#toc59">Action Modifiers</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents2">
+            <span class="SectionNumber">3.4 -</span> <a target="_self" href="./fudge_srd_06.html#toc60">Unopposed Actions</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents2">
+            <span class="SectionNumber">3.5 -</span> <a target="_self" href="./fudge_srd_06.html#toc61">Opposed Actions</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents2">
+            <span class="SectionNumber">3.6 -</span> <a target="_self" href="./fudge_srd_06.html#toc62">Critical Results</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents2">
+            <span class="SectionNumber">3.7 -</span> <a target="_self" href="./fudge_srd_06.html#toc63">NPC Reactions</a>
+          </p>
+        </li>
+
+        <li>
+          <p class="Contents1">
+            <span class="SectionNumber">Chapter 4 -</span> <a target="_self" href="./fudge_srd_07.html#toc64">Combat</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents2">
+            <span class="SectionNumber">4.1 -</span> <a target="_self" href="./fudge_srd_07.html#toc65">Combat Terms</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents2">
+            <span class="SectionNumber">4.2 -</span> <a target="_self" href="./fudge_srd_07.html#toc66">Melee Combat</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">4.2.1 -</span> <a target="_self" href="./fudge_srd_07.html#toc67">Story Elements</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">4.2.2 -</span> <a target="_self" href="./fudge_srd_07.html#toc68">Simultaneous Combat Rounds</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">4.2.3 -</span> <a target="_self" href="./fudge_srd_07.html#toc69">Alternating Combat Turns</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents2">
+            <span class="SectionNumber">4.3 -</span> <a target="_self" href="./fudge_srd_07.html#toc70">Melee Combat Options</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">4.3.1 -</span> <a target="_self" href="./fudge_srd_07.html#toc71">Melee Modifiers</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">4.3.2 -</span> <a target="_self" href="./fudge_srd_07.html#toc72">Offensive/Defensive Tactics</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">4.3.3 -</span> <a target="_self" href="./fudge_srd_07.html#toc73">PCs vs. NPCs</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">4.3.4 -</span> <a target="_self" href="./fudge_srd_07.html#toc74">Multiple Combatants in Melee</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">4.3.5 -</span> <a target="_self" href="./fudge_srd_07.html#toc75">Hit Location</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">4.3.6 -</span> <a target="_self" href="./fudge_srd_07.html#toc76">Fancy Stuff</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents2">
+            <span class="SectionNumber">4.4 -</span> <a target="_self" href="./fudge_srd_07.html#toc77">Ranged Combat</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents2">
+            <span class="SectionNumber">4.5 -</span> <a target="_self" href="./fudge_srd_07.html#toc78">Wounds</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">4.5.1 -</span> <a target="_self" href="./fudge_srd_07.html#toc79">Wound Levels</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">4.5.2 -</span> <a target="_self" href="./fudge_srd_07.html#toc80">Damage Capacity</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">4.5.3 -</span> <a target="_self" href="./fudge_srd_07.html#toc81">Wound Factors</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">4.5.4 -</span> <a target="_self" href="./fudge_srd_07.html#toc82">Sample Wound Factors List</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">4.5.5 -</span> <a target="_self" href="./fudge_srd_07.html#toc83">Determining Wound Level</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">4.5.6 -</span> <a target="_self" href="./fudge_srd_07.html#toc84">Grazing</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">4.5.7 -</span> <a target="_self" href="./fudge_srd_07.html#toc85">Recording Wounds</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">4.5.8 -</span> <a target="_self" href="./fudge_srd_07.html#toc86">Non-human Scale in Combat</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents2">
+            <span class="SectionNumber">4.6 -</span> <a target="_self" href="./fudge_srd_07.html#toc87">Wound Options</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">4.6.1 -</span> <a target="_self" href="./fudge_srd_07.html#toc88">Damage Die Roll</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">4.6.2 -</span> <a target="_self" href="./fudge_srd_07.html#toc89">Stun, Knockout, and Pulling Punches</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">4.6.3 -</span> <a target="_self" href="./fudge_srd_07.html#toc90">Min-Mid-Max Die Roll</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">4.6.4 -</span> <a target="_self" href="./fudge_srd_07.html#toc91">PC Death</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">4.6.5 -</span> <a target="_self" href="./fudge_srd_07.html#toc92">Technological Levels as Scale</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents2">
+            <span class="SectionNumber">4.7 -</span> <a target="_self" href="./fudge_srd_07.html#toc93">Combat and Wounding Example</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents2">
+            <span class="SectionNumber">4.8 -</span> <a target="_self" href="./fudge_srd_07.html#toc94">Healing</a>
+          </p>
+        </li>
+
+        <li>
+          <p class="Contents1">
+            <span class="SectionNumber">Chapter 5 -</span> <a target="_self" href="./fudge_srd_08.html#toc95">Character Development</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents2">
+            <span class="SectionNumber">5.1 -</span> <a target="_self" href="./fudge_srd_08.html#toc96">Subjective Character Development</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents2">
+            <span class="SectionNumber">5.2 -</span> <a target="_self" href="./fudge_srd_08.html#toc97">Objective Character Development</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents2">
+            <span class="SectionNumber">5.3 -</span> <a target="_self" href="./fudge_srd_08.html#toc98">Development through Training</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents2">
+            <span class="SectionNumber">5.4 -</span> <a target="_self" href="./fudge_srd_08.html#toc99">Alternative Experience System</a>
+          </p>
+        </li>
+
+        <li>
+          <p class="Contents1">
+            <span class="SectionNumber">Chapter 6 -</span> <a target="_self" href="./fudge_srd_09.html#toc100">Tips and Examples</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents2">
+            <span class="SectionNumber">6.1 -</span> <a target="_self" href="./fudge_srd_09.html#toc101">GM Tips and Conversion</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">6.1.1 -</span> <a target="_self" href="./fudge_srd_09.html#toc102">Conversion Hints</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">6.1.2 -</span> <a target="_self" href="./fudge_srd_09.html#toc104">Templates</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents2">
+            <span class="SectionNumber">6.2 -</span> <a target="_self" href="./fudge_srd_09.html#toc105">Character Sheet Example</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents2">
+            <span class="SectionNumber">6.3 -</span> <a target="_self" href="./fudge_srd_09.html#toc106">Character Examples</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">6.3.1 -</span> <a target="_self" href="./fudge_srd_09.html#toc107">Fantasy Characters</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">6.3.2 -</span> <a target="_self" href="./fudge_srd_09.html#toc112">Historical Fiction Characters</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">6.3.3 -</span> <a target="_self" href="./fudge_srd_09.html#toc117">Modern Characters</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">6.3.4 -</span> <a target="_self" href="./fudge_srd_09.html#toc121">Science Fiction Characters</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">6.3.5 -</span> <a target="_self" href="./fudge_srd_09.html#toc126">Miscellaneous Characters</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents2">
+            <span class="SectionNumber">6.4 -</span> <a target="_self" href="./fudge_srd_09.html#toc132">Class and Racial Template Examples</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">6.4.1 -</span> <a target="_self" href="./fudge_srd_09.html#toc133">Ranger Template (Fantasy Character Class)</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">6.4.2 -</span> <a target="_self" href="./fudge_srd_09.html#toc134">Broad Class Templates</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">6.4.3 -</span> <a target="_self" href="./fudge_srd_09.html#toc135">Cercopes (Fantasy Race)</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents2">
+            <span class="SectionNumber">6.5 -</span> <a target="_self" href="./fudge_srd_09.html#toc136">Animal &amp; Creature Examples</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">6.5.1 -</span> <a target="_self" href="./fudge_srd_09.html#toc137">Dog</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">6.5.2 -</span> <a target="_self" href="./fudge_srd_09.html#toc138">Cat</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">6.5.3 -</span> <a target="_self" href="./fudge_srd_09.html#toc139">Horse</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">6.5.4 -</span> <a target="_self" href="./fudge_srd_09.html#toc140">Camel</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">6.5.5 -</span> <a target="_self" href="./fudge_srd_09.html#toc141">Elephant</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">6.5.6 -</span> <a target="_self" href="./fudge_srd_09.html#toc142">Falcon</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">6.5.7 -</span> <a target="_self" href="./fudge_srd_09.html#toc143">Lion</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">6.5.8 -</span> <a target="_self" href="./fudge_srd_09.html#toc144">Grizzly Bear</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">6.5.9 -</span> <a target="_self" href="./fudge_srd_09.html#toc145">Cobra</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">6.5.10 -</span> <a target="_self" href="./fudge_srd_09.html#toc146">Skunk</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">6.5.11 -</span> <a target="_self" href="./fudge_srd_09.html#toc147">Giant Spider</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">6.5.12 -</span> <a target="_self" href="./fudge_srd_09.html#toc148">Griffin</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">6.5.13 -</span> <a target="_self" href="./fudge_srd_09.html#toc149">Dragon</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents2">
+            <span class="SectionNumber">6.6 -</span> <a target="_self" href="./fudge_srd_09.html#toc150">Equipment Examples</a>
+          </p>
+        </li>
+
+        <li>
+          <p class="Contents1">
+            <span class="SectionNumber">Chapter 7 -</span> <a target="_self" href="./fudge_srd_10.html#toc151">The Addenda</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents2">
+            <span class="SectionNumber">7.1 -</span> <a target="_self" href="./fudge_srd_10.html#toc152">Sample Magic System: Fudge Magic</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">7.1.1 -</span> <a target="_self" href="./fudge_srd_10.html#toc153">Magic Potential</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">7.1.2 -</span> <a target="_self" href="./fudge_srd_10.html#toc154">Spells</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">7.1.3 -</span> <a target="_self" href="./fudge_srd_10.html#toc155">Mana</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">7.1.4 -</span> <a target="_self" href="./fudge_srd_10.html#toc156">Skill</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">7.1.5 -</span> <a target="_self" href="./fudge_srd_10.html#toc157">Resolution</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">7.1.6 -</span> <a target="_self" href="./fudge_srd_10.html#toc158">Personal Magic Resistance</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">7.1.7 -</span> <a target="_self" href="./fudge_srd_10.html#toc159">Certain Spell-Casting</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">7.1.8 -</span> <a target="_self" href="./fudge_srd_10.html#toc160">Enchanting Items</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">7.1.9 -</span> <a target="_self" href="./fudge_srd_10.html#toc161">Fudge Magic Options</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents2">
+            <span class="SectionNumber">7.2 -</span> <a target="_self" href="./fudge_srd_10.html#toc166">Sample Miracle System: Fudge Miracles</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">7.2.1 -</span> <a target="_self" href="./fudge_srd_10.html#toc167">Divine Favor</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">7.2.2 -</span> <a target="_self" href="./fudge_srd_10.html#toc168">Petitioning a Miracle</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">7.2.3 -</span> <a target="_self" href="./fudge_srd_10.html#toc169">Modifiers to the Petitioning Skill Level</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents2">
+            <span class="SectionNumber">7.3 -</span> <a target="_self" href="./fudge_srd_10.html#toc170">Sample Psionic System: Fudge Psi</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">7.3.1 -</span> <a target="_self" href="./fudge_srd_10.html#toc171">Psionic Powers</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">7.3.2 -</span> <a target="_self" href="./fudge_srd_10.html#toc172">Psionic Skills</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">7.3.3 -</span> <a target="_self" href="./fudge_srd_10.html#toc173">Psychic Reservoir</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">7.3.4 -</span> <a target="_self" href="./fudge_srd_10.html#toc174">Psionic Actions</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">7.3.5 -</span> <a target="_self" href="./fudge_srd_10.html#toc175">Desperation Psionics</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">7.3.6 -</span> <a target="_self" href="./fudge_srd_10.html#toc176">Psi Modifiers Summary</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">7.3.7 -</span> <a target="_self" href="./fudge_srd_10.html#toc177">Psi Examples</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents2">
+            <span class="SectionNumber">7.4 -</span> <a target="_self" href="./fudge_srd_10.html#toc178">Alternate Rules</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">7.4.1 -</span> Alternate Section <a target="_self" class="Internet20link" href="./fudge_srd_04.html#secallocatingtraits">1.4</a>: <a target="_self" href="./fudge_srd_10.html#toc179">Character Creation</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">7.4.2 -</span> Alternate Section <a target="_self" class="Internet20link" href="./fudge_srd_06.html#secrollingdice">3.2</a>: <a target="_self" href="./fudge_srd_10.html#toc180">Diceless Action Resolution</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">7.4.3 -</span> Alternate Section <a target="_self" class="Internet20link" href="./fudge_srd_06.html#secrollingdice">3.2</a>: <a target="_self" href="./fudge_srd_10.html#toc185">Rolling the Dice</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">7.4.4 -</span> Alternate Section <a target="_self" class="Internet20link" href="./fudge_srd_07.html#secfancystuff">4.3.6</a>: <a target="_self" href="./fudge_srd_10.html#toc186">Heroic Evasion</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">7.4.5 -</span> Alternate Section <a target="_self" class="Internet20link" href="./fudge_srd_07.html#secrecordingwounds">4.5.7</a>: <a target="_self" href="./fudge_srd_10.html#toc187">Recording Wounds</a>
+          </p>
+        </li>
+
+         <li>
+          <p class="Contents1">
+            <span class="SectionNumber">Chapter 8 -</span> <a target="_self" href="./fudge_srd_11.html#toc188">Fantasy Fudge</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents2">
+            <span class="SectionNumber">8.1 -</span> <a target="_self" href="./fudge_srd_11.html#toc189">Character Creation</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">8.1.1 -</span> <a target="_self" href="./fudge_srd_11.html#toc190">Character Points</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">8.1.2 -</span> <a target="_self" href="./fudge_srd_11.html#toc199">Skill Descriptions</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">8.1.3 -</span> <a target="_self" href="./fudge_srd_11.html#toc200">Attributes</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">8.1.4 -</span> <a target="_self" href="./fudge_srd_11.html#toc203">Gifts</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">8.1.5 -</span> <a target="_self" href="./fudge_srd_11.html#toc204">Faults</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents2">
+            <span class="SectionNumber">8.2 -</span> <a target="_self" href="./fudge_srd_11.html#toc205">Magic</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">8.2.1 -</span> <a target="_self" href="./fudge_srd_11.html#toc206">Innate Magic</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">8.2.2 -</span> <a target="_self" href="./fudge_srd_11.html#toc207">Hedge Magic</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">8.2.3 -</span> <a target="_self" href="./fudge_srd_11.html#toc208">Scholarly Magic</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents2">
+            <span class="SectionNumber">8.3 -</span> <a target="_self" href="./fudge_srd_11.html#toc218">Clerical Magic</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">8.3.1 -</span> <a target="_self" href="./fudge_srd_11.html#toc219">Calling on Divine Favor</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents2">
+            <span class="SectionNumber">8.4 -</span> <a target="_self" href="./fudge_srd_11.html#toc220">Non-Human Races</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">8.4.1 -</span> <a target="_self" href="./fudge_srd_11.html#toc221">Sample Racial Package: Elves</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">8.4.2 -</span> <a target="_self" href="./fudge_srd_11.html#toc222">Sample Racial Package: Halflings</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents2">
+            <span class="SectionNumber">8.5 -</span> <a target="_self" href="./fudge_srd_11.html#toc223">Equipping Characters</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">8.5.1 -</span> <a target="_self" href="./fudge_srd_11.html#toc224">Damage Factors and Equipment</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents2">
+            <span class="SectionNumber">8.6 -</span> <a target="_self" href="./fudge_srd_11.html#toc225">Character Development</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents2">
+            <span class="SectionNumber">8.7 -</span> <a target="_self" href="./fudge_srd_11.html#toc226">Settings for Fantasy Fudge</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents2">
+            <span class="SectionNumber">8.8 -</span> <a target="_self" href="./fudge_srd_11.html#toc227">Action Resolution</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">8.8.1 -</span> <a target="_self" href="./fudge_srd_11.html#toc228">Rolling the Dice</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">8.8.2 -</span> <a target="_self" href="./fudge_srd_11.html#toc229">Unopposed Actions</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">8.8.3 -</span> <a target="_self" href="./fudge_srd_11.html#toc230">Opposed Actions</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents2">
+            <span class="SectionNumber">8.9 -</span> <a target="_self" href="./fudge_srd_11.html#toc231">Combat</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">8.9.1 -</span> <a target="_self" href="./fudge_srd_11.html#toc232">Special Circumstances</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">8.9.2 -</span> <a target="_self" href="./fudge_srd_11.html#toc233">Wounds</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">8.9.3 -</span> <a target="_self" href="./fudge_srd_11.html#toc234">Stun, Knockout, and Pulling Punches</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents2">
+            <span class="SectionNumber">8.10 -</span> <a target="_self" href="./fudge_srd_11.html#toc235">Situational Rolls</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents2">
+            <span class="SectionNumber">8.11 -</span> <a target="_self" href="./fudge_srd_11.html#toc236">Fudge Points</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents2">
+            <span class="SectionNumber">8.12 -</span> <a target="_self" href="./fudge_srd_11.html#toc237">The Only Rule You Really Need To Know</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents2">
+            <span class="SectionNumber">8.13 -</span> <a target="_self" href="./fudge_srd_11.html#toc238">Sample Characters</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">8.13.1 -</span> <a target="_self" href="./fudge_srd_11.html#toc239">Azrath (Mage)</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">8.13.2 -</span> <a target="_self" href="./fudge_srd_11.html#toc240">Hans (Warrior)</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">8.13.3 -</span> <a target="_self" href="./fudge_srd_11.html#toc241">Lena (Rogue)</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">8.13.4 -</span> <a target="_self" href="./fudge_srd_11.html#toc242">Tomas (Priest)</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents2">
+            <span class="SectionNumber">8.14 -</span> <a target="_self" href="./fudge_srd_11.html#toc243">Wild Things</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">8.14.1 -</span> <a target="_self" href="./fudge_srd_11.html#toc244">Basilisk</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">8.14.2 -</span> <a target="_self" href="./fudge_srd_11.html#toc245">Dragon</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">8.14.3 -</span> <a target="_self" href="./fudge_srd_11.html#toc246">Ghost</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">8.14.4 -</span> <a target="_self" href="./fudge_srd_11.html#toc247">Ghoul</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">8.14.5 -</span> <a target="_self" href="./fudge_srd_11.html#toc248">Giant Worm</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">8.14.6 -</span> <a target="_self" href="./fudge_srd_11.html#toc249">Goblin</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">8.14.7 -</span> <a target="_self" href="./fudge_srd_11.html#toc250">Great Weasel</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">8.14.8 -</span> <a target="_self" href="./fudge_srd_11.html#toc251">Hydra</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">8.14.9 -</span> <a target="_self" href="./fudge_srd_11.html#toc252">Hyeena</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">8.14.10 -</span> <a target="_self" href="./fudge_srd_11.html#toc253">Imp</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">8.14.11 -</span> <a target="_self" href="./fudge_srd_11.html#toc254">Medusa</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">8.14.12 -</span> <a target="_self" href="./fudge_srd_11.html#toc255">Rathent</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">8.14.13 -</span> <a target="_self" href="./fudge_srd_11.html#toc256">Ratlings</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">8.14.14 -</span> <a target="_self" href="./fudge_srd_11.html#toc257">Restless Dead</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">8.14.15 -</span> <a target="_self" href="./fudge_srd_11.html#toc258">Soldier, Professional</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">8.14.16 -</span> <a target="_self" href="./fudge_srd_11.html#toc259">Thug</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">8.14.17 -</span> <a target="_self" href="./fudge_srd_11.html#toc260">Troll</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">8.14.18 -</span> <a target="_self" href="./fudge_srd_11.html#toc261">Wall Crawler</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">8.14.19 -</span> <a target="_self" href="./fudge_srd_11.html#toc262">Zombie</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <span class="SectionNumber">8.14.20 -</span> <a target="_self" href="./fudge_srd_11.html#toc263">Zuvembie</a>
+          </p>
+        </li>
+
+        <li>
+          <p class="Contents1">
+            <a target="_self" href="./fudge_srd_12.html#toc264">Miscellaneous Charts and Information</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents2">
+            <a target="_self" href="./fudge_srd_12.html#toc265">Fudge Combat Tables</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents3">
+            <a target="_self" href="./fudge_srd_12.html#toc266">Sample Wound Factors</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents2">
+            <a target="_self" href="./fudge_srd_12.html#toc267">3d6 Dice Technique</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents2">
+            <a target="_self" href="./fudge_srd_12.html#toc268">d% Dice Technique</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents2">
+            <a target="_self" href="./fudge_srd_12.html#toc269">Optional Damage Rolls</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents2">
+            <a target="_self" href="./fudge_srd_12.html#toc270">Sample Graze Severity Table</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents2">
+            <a target="_self" href="./fudge_srd_12.html#toc271">Sample Scale Table</a>
+          </p>
+        </li>
+        <li>
+          <p class="Contents2">
+            <a target="_self" href="./fudge_srd_12.html#toc272">Sample Skills</a>
+          </p>
+        </li>
+
+        <li>
+          <p class="Contents1">
+            <a target="_self" href="./fudge_srd_13.html#toc273">Open Game License Version 1.0a</a>
+          </p>
+        </li>
+      </ul>
+    </section>
+
+</main>
+
+</body>
+</html>
