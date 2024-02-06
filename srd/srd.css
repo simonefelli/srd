@@ -3242,3 +3242,148 @@ font-size:2.166667rem;
 p.c1 {
 font-size:2.166667rem;
 }
+
+
+
+.Custom01_1 {
+margin-top:0;
+margin-bottom:0;
+margin-left:0;
+padding-left:1.4rem;
+clear:left;
+}
+
+.Custom01_1 > li::marker {
+content:'';
+}
+
+.Custom01_1 > li > p:first-of-type {
+text-indent:-1.5rem;
+}
+
+.Custom01_1 > li > p {
+margin-left:0;
+}
+
+.Custom01_1 > li > p:first-of-type::before {
+content:'▶ ';
+font-family:OpenSymbol;
+font-size:.75rem;
+display:inline-block;
+width:1.17874rem;
+text-indent:0;
+}
+
+.Custom01_2 {
+margin-top:0;
+margin-bottom:0;
+margin-left:0;
+padding-left:1rem;
+counter-reset:Custom01_2 0;
+clear:left;
+}
+
+.Custom01_2 > li::marker {
+content:'';
+}
+
+.Custom01_2 > li > p:first-of-type {
+text-indent:0;
+}
+
+.Custom01_2 > li > p {
+margin-left:0;
+}
+
+.Custom01_2 > li > p:first-of-type::before {
+counter-increment:Custom01_2;
+content:' ';
+width:1.107874rem;
+text-indent:0;
+}
+
+.Custom01_3 {
+margin-top:0;
+margin-bottom:0;
+margin-left:0;
+padding-left:1.3rem;
+counter-reset:Custom01_3 0;
+clear:left;
+}
+
+.Custom01_3 > li::marker {
+content:'';
+}
+
+.Custom01_3 > li > p:first-of-type {
+text-indent:0;
+}
+
+.Custom01_3 > li > p {
+margin-left:0;
+}
+
+.Custom01_3 > li > p:first-of-type::before {
+counter-increment:Custom01_3;
+content:' ';
+width:3.399213rem;
+text-indent:0;
+}
+
+.Custom02_1 {
+margin-top:0;
+margin-bottom:0;
+margin-left:0;
+padding-left:1.2rem;
+counter-reset:Custom02_1 0;
+clear:left;
+}
+
+.Custom02_1 > li::marker {
+content:'';
+}
+
+.Custom02_1 > li > p:first-of-type {
+text-indent:-1.183465rem;
+}
+
+.Custom02_1 > li > p {
+margin-left:0;
+}
+
+.Custom02_1 > li > p:first-of-type::before {
+counter-increment:Custom02_1;
+content:' ';
+display:inline-block;
+width:1.183465rem;
+text-indent:0;
+}
+
+.Custom02_2 {
+margin-top:0;
+margin-bottom:0;
+margin-left:0;
+padding-left:1.6rem;
+counter-reset:Custom02_2 0;
+clear:left;
+}
+
+.Custom02_2 > li::marker {
+content:'';
+}
+
+.Custom02_2 > li > p:first-of-type {
+text-indent:-1.17874rem;
+}
+
+.Custom02_2 > li > p {
+margin-left:0;
+}
+
+.Custom02_2 > li > p:first-of-type::before {
+counter-increment:Custom02_2;
+content:' ';
+display:inline-block;
+width:1.17874rem;
+text-indent:0;
+}
