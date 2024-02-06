@@ -338,7 +338,7 @@ font-size:.916667rem;
 }
 
 p.Quotations {
-margin-left:1.4rem;
+margin-left:1.3rem;
 margin-right:0;
 margin-top:.354331rem;
 margin-bottom:.354331rem;
@@ -2010,6 +2010,7 @@ list-style-type:none;
 ul.c177 {
 margin-top:0;
 margin-bottom:0;
+margin-left: -1rem;
 list-style-type:circle;
 clear:left;
 }
@@ -3217,6 +3218,7 @@ padding:0;
 ul.c8 {
 margin-top:0;
 margin-bottom:0;
+margin-left:-0.5rem;
 list-style-type:disc;
 clear:left;
 }
